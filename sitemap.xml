@@ -4,8 +4,40 @@
     
     <url>
     
+      <loc>/talk/poma-talk/</loc>
+      <lastmod>2019-01-25T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/project/poma/</loc>
+      <lastmod>2019-01-21T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/epimet-talk/</loc>
+      <lastmod>2019-01-16T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/fbonto_bio-talk/</loc>
+      <lastmod>2018-12-20T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/publication/obesity_carles_2018/</loc>
-      <lastmod>2018-07-08T00:00:00+01:00</lastmod>
+      <lastmod>2018-07-08T00:00:00+02:00</lastmod>
     </url>
     
   
@@ -13,7 +45,7 @@
     <url>
     
       <loc>/talk/metnet-talk/</loc>
-      <lastmod>2018-02-02T00:00:00+00:00</lastmod>
+      <lastmod>2018-02-02T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -21,7 +53,7 @@
     <url>
     
       <loc>/talk/bioinformatics-talk/</loc>
-      <lastmod>2017-12-20T00:00:00+00:00</lastmod>
+      <lastmod>2017-12-20T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -29,7 +61,7 @@
     <url>
     
       <loc>/talk/febs3-talk/</loc>
-      <lastmod>2017-10-23T00:00:00+01:00</lastmod>
+      <lastmod>2017-10-23T00:00:00+02:00</lastmod>
     </url>
     
   
@@ -37,7 +69,7 @@
     <url>
     
       <loc>/post/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2017-01-01T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -45,7 +77,7 @@
     <url>
     
       <loc>/publication/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2017-01-01T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -53,15 +85,7 @@
     <url>
     
       <loc>/talk/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/project/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+01:00</lastmod>
+      <lastmod>2017-01-01T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -69,7 +93,7 @@
     <url>
     
       <loc>/project/example-external-project/</loc>
-      <lastmod>2016-04-27T00:00:00+01:00</lastmod>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
     </url>
     
   
@@ -77,7 +101,7 @@
     <url>
     
       <loc>/post/getting-started/</loc>
-      <lastmod>2018-01-13T00:00:00+00:00</lastmod>
+      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -93,7 +117,7 @@
     <url>
     
       <loc>/publication_types/2/</loc>
-      <lastmod>2018-07-08T00:00:00+01:00</lastmod>
+      <lastmod>2018-07-08T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -102,7 +126,7 @@
     <url>
     
       <loc>/tags/academic/</loc>
-      <lastmod>2018-01-13T00:00:00+00:00</lastmod>
+      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -118,26 +142,8 @@
     
     <url>
     
-      <loc>/tags/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/tags/demo/</loc>
-      <lastmod>2016-04-27T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/plot/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -146,7 +152,7 @@
     <url>
     
       <loc>/</loc>
-      <lastmod>2018-08-05T00:00:00+01:00</lastmod>
+      <lastmod>2018-08-05T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -155,7 +161,7 @@
     <url>
     
       <loc>/project/</loc>
-      <lastmod>2016-04-27T00:00:00+01:00</lastmod>
+      <lastmod>2019-01-21T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -164,7 +170,7 @@
     <url>
     
       <loc>/publication_types/</loc>
-      <lastmod>2018-07-08T00:00:00+01:00</lastmod>
+      <lastmod>2018-07-08T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -190,7 +196,16 @@
     
     <url>
     
-      <loc>/tags/regression/</loc>
+      <loc>/tags/</loc>
+      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/plot/</loc>
       <lastmod>2015-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -199,8 +214,8 @@
     
     <url>
     
-      <loc>/tags/</loc>
-      <lastmod>2018-01-13T00:00:00+00:00</lastmod>
+      <loc>/tags/regression/</loc>
+      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
