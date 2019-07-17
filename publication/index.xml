@@ -7,27 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Pol Castellano</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>/publication/person-re-identification/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0100</pubDate>
+      <title>Lifestyle intervention decreases urine trimethylamine N-oxide levels in prepubertal children with obesity</title>
+      <link>/publication/obesity_carles_2018/</link>
+      <pubDate>Sun, 08 Jul 2018 00:00:00 +0200</pubDate>
       
-      <guid>/publication/person-re-identification/</guid>
-      <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
-    </item>
-    
-    <item>
-      <title>Mobile visual clothing search</title>
-      <link>/publication/clothing-search/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0100</pubDate>
-      
-      <guid>/publication/clothing-search/</guid>
-      <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
+      <guid>/publication/obesity_carles_2018/</guid>
+      <description>Objective: Early lifestyle interventions in children with obesity decrease risk of future obesity and metabolic disorders. However, the metabolic effects of such interventions are not completely characterized.
+Methods: We analyzed the impact of lifestyle intervention in the urine metabolome from prepubertal children. We studied 34 prepubertal children with obesity before and after a 6- month-long lifestyle intervention program. We applied a nuclear magnetic resonance approach to obtain the metabolomic profile from urine samples.</description>
     </item>
     
   </channel>

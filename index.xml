@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pol Castellano on Pol Castellano</title>
@@ -7,309 +6,439 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Pol Castellano</copyright>
-    <lastBuildDate>Sun, 05 Aug 2018 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0200</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Privacy Policy</title>
-      <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <title>POMA: Shiny Framework Statistical analysis tool for targeted metabolomic data</title>
+      <link>/talk/poma_user2019/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0200</pubDate>
       
-      <guid>/privacy/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+      <guid>/talk/poma_user2019/</guid>
+      <description>&lt;p&gt;Similarly to other high-throughput technologies, metabolomics usually faces a data mining challenge to provide an understandable and useful output to advance in biomarker discovery and precision medicine. Biological interpretation of the results is one of the hard points and several bioinformatics tools have emerged to simplify and improve this step. However, sometimes these tools accept only very simplistic data structures and, for example, they do not even accept data with several covariates.&lt;/p&gt;
+
+&lt;p&gt;POMA is a free, friendly and fast Shiny interface for analysing and visualization data after an analytical targeted metabolomics process and its hosted on &lt;a href=&#34;https://polcastellano.shinyapps.io/POMA/&#34; target=&#34;_blank&#34;&gt;https://polcastellano.shinyapps.io/POMA/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;POMA allows the user to go from the raw data to statistical analysis. The analysis is organized in three blocks: “Load Data” (where user can upload metabolite data and a covariates file), “Pre-processing” (value imputation and normalization) and “Statistical analysis” (univariate and multivariate methods, limma, correlation analysis, feature selection methods, random forest, etc.). These steps include multiple types of interactive data visualization integrated in an intuitive user interface that requires no programming skills. Finally, POMA also generates different automatic statistical and exploratory reports to facilitate the analysis and interpretation of the results.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Example Talk</title>
-      <link>/talk/example-talk/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <title>Blogdown: Make your own website easily with R!</title>
+      <link>/post/blogdown/</link>
+      <pubDate>Wed, 26 Jun 2019 10:00:00 +0000</pubDate>
       
-      <guid>/talk/example-talk/</guid>
-      <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://sourcethemes.com/academic/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+      <guid>/post/blogdown/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/pcastellanoescuder/blogdown_slides&#34; target=&#34;_blank&#34;&gt;Go to slides repository!&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Deep Learning</title>
-      <link>/project/deep-learning/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0100</pubDate>
+      <title>POMA: Shiny Framework Statistical analysis tool for targeted metabolomic data</title>
+      <link>/talk/poma-talk/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0100</pubDate>
       
-      <guid>/project/deep-learning/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+      <guid>/talk/poma-talk/</guid>
+      <description>&lt;p&gt;Similarly to other high-throughput technologies, metabolomics usually faces a data mining challenge to provide an understandable and useful output to advance in biomarker discovery and precision medicine. Biological interpretation of the results is one of the hard points and several bioinformatics tools have emerged to simplify and improve this step. However, sometimes these tools accept only very simplistic data structures and, for example, they do not even accept data with several covariates.&lt;/p&gt;
 
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;POMA is a free, friendly and fast Shiny interface for analysing and visualization data after an analytical targeted metabolomics process and its hosted on &lt;a href=&#34;https://polcastellano.shinyapps.io/POMA/&#34; target=&#34;_blank&#34;&gt;https://polcastellano.shinyapps.io/POMA/&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+&lt;p&gt;POMA allows the user to go from the raw data to statistical analysis. The analysis is organized in three blocks: “Load Data” (where user can upload metabolite data and a covariates file), “Pre-processing” (value imputation and normalization) and “Statistical analysis” (univariate and multivariate methods, limma, correlation analysis, feature selection methods, random forest, etc.). These steps include multiple types of interactive data visualization integrated in an intuitive user interface that requires no programming skills. Finally, POMA also generates different automatic statistical and exploratory reports to facilitate the analysis and interpretation of the results.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>External Project</title>
-      <link>/project/example-external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0100</pubDate>
+      <title>POMA</title>
+      <link>/project/poma/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0100</pubDate>
       
-      <guid>/project/example-external-project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Academic: the website designer for Hugo</title>
-      <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
-      
-      <guid>/post/getting-started/</guid>
+      <guid>/project/poma/</guid>
       <description>
 
-&lt;p&gt;&lt;strong&gt;Academic&lt;/strong&gt; is a framework to help you create a beautiful website quickly. Perfect for personal sites, blogs, or business/project sites. &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Check out the latest demo&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes. Then head on over to the &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Quick Start guide&lt;/a&gt; or take a look at the &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34;&gt;Release Notes&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;poma-statistical-analysis-tool-for-targeted-metabolomic-data&#34;&gt;POMA: Statistical analysis tool for targeted metabolomic data&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;Screenshot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;Key features:&lt;/p&gt;
+&lt;h4&gt;&lt;b&gt;&lt;span style=&#34;color:#f49338&#34;&gt;Fast:&lt;/span&gt;&lt;/b&gt; Analyze and visualize your data in few steps&lt;/h4&gt;
+&lt;h4&gt;&lt;b&gt;&lt;span style=&#34;color:#f49338&#34;&gt;Friendly:&lt;/span&gt;&lt;/b&gt; POMA is very intuitive and no needed programming skills in any step of workflow&lt;/h4&gt;
+&lt;h4&gt;&lt;b&gt;&lt;span style=&#34;color:#f49338&#34;&gt;Free:&lt;/span&gt;&lt;/b&gt; All POMA options and analysis are completely free for all users&lt;/h4&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Easily manage various content including homepage, blog posts, publications, talks, and projects&lt;/li&gt;
-&lt;li&gt;Extensible via &lt;strong&gt;color themes&lt;/strong&gt; and &lt;strong&gt;widgets/plugins&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Write in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;Markdown&lt;/a&gt; for easy formatting and code highlighting, with &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34;&gt;LaTeX&lt;/a&gt; for mathematical expressions&lt;/li&gt;
-&lt;li&gt;Social/academic network linking, &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34;&gt;Google Analytics&lt;/a&gt;, and &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34;&gt;Disqus&lt;/a&gt; comments&lt;/li&gt;
-&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
-&lt;li&gt;Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;Multilingual and easy to customize&lt;/li&gt;
-&lt;/ul&gt;
+&lt;hr /&gt;
 
-&lt;h2 id=&#34;color-themes&#34;&gt;Color Themes&lt;/h2&gt;
-
-&lt;p&gt;Academic is available in different color themes and font themes.&lt;/p&gt;
-
-
-
-&lt;div class=&#34;gallery&#34;&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Default&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Ocean&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Dark&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-dark.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-dark.png&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Default&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-forest.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-forest.png&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Coffee theme with Playfair font&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-coffee-playfair.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-coffee-playfair.png&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;1950s&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-1950s.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-1950s.png&#34;&gt;
-  &lt;/a&gt;
-  
-&lt;/div&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-
-&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
+&lt;h3 id=&#34;input-data&#34;&gt;Input Data&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;one-click install using your web browser (recommended)&lt;/li&gt;
-&lt;li&gt;install on your computer using Git with the Command Prompt/Terminal app&lt;/li&gt;
-&lt;li&gt;install on your computer by downloading the ZIP files&lt;/li&gt;
-&lt;li&gt;install on your computer with RStudio&lt;/li&gt;
+&lt;li&gt;Upload your data in the &lt;em&gt;&amp;ldquo;Input Data&amp;rdquo;&lt;/em&gt; tab.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Data must be a .CSV &lt;em&gt;comma-separated-value&lt;/em&gt; file.&lt;/li&gt;
+&lt;li&gt;First/Left-hand column must be sample IDs.&lt;/li&gt;
+&lt;li&gt;Second/Left-hand column must be sample groups.&lt;/li&gt;
+&lt;li&gt;Ideally, first row should be column names (metabolites).&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;quick-install-using-your-web-browser&#34;&gt;Quick install using your web browser&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Metabolomic Data&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Each row denotes a sample and each column denotes a metabolite.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;pix/met_data.png&#34; alt=&#34;Metabolites&#34; title=&#34;Metabolomic Data&#34; width=&#34;600&#34; height=&#34;250&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Covariates file (optional)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Each row denotes a sample (the same as in metabolomic data) and each column denotes covariate.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;pix/cov_data.png&#34; alt=&#34;Covariates&#34; title=&#34;Covariates File&#34; width=&#34;500&#34; height=&#34;180&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;impute-values&#34;&gt;Impute Values&lt;/h3&gt;
+
+&lt;p&gt;Metabolomics data usually presents a high number of missing values. By default, the missing values are treated as the result of low signal intensity.&lt;/p&gt;
+
+&lt;p&gt;For this reason, the imputation of missing values is an essential step in metabolomic data analysis workflow. To deal with that, POMA provides the &lt;strong&gt;Impute Value&lt;/strong&gt; panel which allows the user:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://app.netlify.com/start/deploy?repository=https://github.com/sourcethemes/academic-kickstart&#34; target=&#34;_blank&#34;&gt;Install Academic with Netlify&lt;/a&gt;
+&lt;li&gt;&lt;p&gt;To remove all metabolites of the data that have more of specific percentage (defined by user) of missing values in ALL study groups. By default this parameter is 20%.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;To impute missing values of the data using different methods such as:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Netlify will provide you with a customizable URL to access your new site&lt;/li&gt;
+&lt;li&gt;replace by zero&lt;/li&gt;
+&lt;li&gt;replace by half of the minimum positive value in the original data&lt;/li&gt;
+&lt;li&gt;replace by median&lt;/li&gt;
+&lt;li&gt;replace by mean&lt;/li&gt;
+&lt;li&gt;replace by minimum&lt;/li&gt;
+&lt;li&gt;KNN method (default)&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;On GitHub, go to your newly created &lt;code&gt;academic-kickstart&lt;/code&gt; repository and edit &lt;code&gt;config.toml&lt;/code&gt; to personalize your site. Shortly after saving the file, your site will automatically update&lt;/li&gt;
-&lt;li&gt;Read the &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Quick Start Guide&lt;/a&gt; to learn how to add Markdown content. For inspiration, refer to the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite&#34; target=&#34;_blank&#34;&gt;Markdown content&lt;/a&gt; which powers the &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;install-with-git&#34;&gt;Install with Git&lt;/h3&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;Prerequisites:&lt;/p&gt;
+&lt;h3 id=&#34;normalization&#34;&gt;Normalization&lt;/h3&gt;
+
+&lt;p&gt;Normalization is required to make all metabolites comparable among them. By default the application do not normalize data, however it is recommended to select one normalization method. POMA app offers all these following different types of normalization methods:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://git-scm.com/downloads&#34; target=&#34;_blank&#34;&gt;Download and install Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gohugo.io/getting-started/installing/#quick-install&#34; target=&#34;_blank&#34;&gt;Download and install Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Autoscaling&lt;/li&gt;
+&lt;li&gt;Level scaling&lt;/li&gt;
+&lt;li&gt;Log scaling&lt;/li&gt;
+&lt;li&gt;Log transformation&lt;/li&gt;
+&lt;li&gt;Vast scaling&lt;/li&gt;
+&lt;li&gt;Log Pareto scaling&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-kickstart#fork-destination-box&#34; target=&#34;_blank&#34;&gt;Fork&lt;/a&gt; the &lt;em&gt;Academic Kickstart&lt;/em&gt; repository and clone your fork with Git:&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;pre&gt;&lt;code&gt;git clone https://github.com/sourcethemes/academic-kickstart.git My_Website
-&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;statistics&#34;&gt;Statistics&lt;/h3&gt;
 
-&lt;p&gt;&lt;em&gt;Note that if you forked Academic Kickstart, the above command should be edited to clone your fork, i.e. replace &lt;code&gt;sourcethemes&lt;/code&gt; with your GitHub username.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;The Statistical Analysis tab contains a set of different panels to analyze the data:  1) Univariate analysis; 2) Multivariate analysis; 3) Limma; 4) Correlation analysis; 5) Random Forest; 6) Feature selection and 7) Rank Products. Each one of them includes different options and methods. Below is a brief explanation of each one:&lt;/p&gt;
 
-&lt;li&gt;&lt;p&gt;Initialize the theme:&lt;/p&gt;
+&lt;h4 id=&#34;univariate-analysis&#34;&gt;Univariate analysis&lt;/h4&gt;
 
-&lt;pre&gt;&lt;code&gt;cd My_Website
-git submodule update --init --recursive
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;The Univariate Analysis panel contains five types of analysis to perform comparaisions of each group per each metabolite.&lt;/p&gt;
 
-&lt;h3 id=&#34;install-with-zip&#34;&gt;Install with ZIP&lt;/h3&gt;
+&lt;h5 id=&#34;u-parametric-tests-u&#34;&gt;&lt;u&gt;Parametric tests&lt;/u&gt;&lt;/h5&gt;
 
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-kickstart/archive/master.zip&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt; and extract &lt;em&gt;Academic Kickstart&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/archive/master.zip&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt; and extract the &lt;em&gt;Academic theme&lt;/em&gt; to the &lt;code&gt;themes/academic/&lt;/code&gt; folder from the above step&lt;/li&gt;
-&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;T-test: The results can be shown with an interactive &lt;strong&gt;volcano plot&lt;/strong&gt;.&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&#34;install-with-rstudio&#34;&gt;Install with RStudio&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;pix/volcano.png&#34; alt=&#34;VOLCANO&#34; title=&#34;VOLCANO PLOT&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;View the guide to installing Academic with RStudio&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;One-way Analysis of Variance (ANOVA): If data has a normal distribution and more than two groups.&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&#34;quick-start&#34;&gt;Quick start&lt;/h2&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;All of the previous methods can be corrected by covariables if the user has provided a covariate matrix.&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;If you installed on your computer, view your new website by running the following command:&lt;/p&gt;
+&lt;h5 id=&#34;u-non-parametric-tests-u&#34;&gt;&lt;u&gt;Non-Parametric tests&lt;/u&gt;&lt;/h5&gt;
 
-&lt;pre&gt;&lt;code&gt;hugo server
-&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Mann-Whitney U Test: If data has two groups and non-normal distribution. If data is paired, this test becomes to Wilcoxon Signed Rank Test.&lt;/li&gt;
+&lt;li&gt;Kruskal Wallis Test: If data has a non-normal distribution but more than two groups.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Now visit &lt;a href=&#34;http://localhost:1313&#34; target=&#34;_blank&#34;&gt;localhost:1313&lt;/a&gt; and your new Academic powered website will appear. Otherwise, if using Netlify, they will provide you with your URL.&lt;/p&gt;&lt;/li&gt;
+&lt;h4 id=&#34;multivariate-analysis&#34;&gt;Multivariate analysis&lt;/h4&gt;
 
-&lt;li&gt;&lt;p&gt;Read the &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Quick Start Guide&lt;/a&gt; to learn how to add Markdown content, customize your site, and deploy it. For inspiration, refer to the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite&#34; target=&#34;_blank&#34;&gt;Markdown content&lt;/a&gt; which powers the &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;This step is powered by &lt;strong&gt;mixOmics R package&lt;/strong&gt;. POMA multivariate analysis includes three principal multivariate methods:&lt;/p&gt;
 
-&lt;li&gt;&lt;p&gt;Build your site by running the &lt;code&gt;hugo&lt;/code&gt; command. Then &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34;&gt;host it for free using Github Pages&lt;/a&gt; or Netlify (refer to the first installation method). Alternatively, copy the generated &lt;code&gt;public/&lt;/code&gt; directory (by FTP, Rsync, etc.) to your production web server (such as a university&amp;rsquo;s hosting service).&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Principal Component Analysis (PCA)&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;pix/pca.png&#34; alt=&#34;PCA&#34; title=&#34;PCA&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; to help keep track of updates and check out the &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34;&gt;release notes&lt;/a&gt; prior to updating your site.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Partial Least Squares Discriminant Analysis (PLS-DA)&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Before updating the framework, it is recommended to make a backup of your entire website directory (or at least your &lt;code&gt;themes/academic&lt;/code&gt; directory) and record your current version number.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;pix/plsda.png&#34; alt=&#34;PLSDA&#34; title=&#34;PLSDA&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;
+  &lt;img src=&#34;pix/plsda_errors.png&#34; alt=&#34;PLSDAERR&#34; title=&#34;PLSDA ERRORS&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;By default, Academic is installed as a Git submodule which can be updated by running the following command:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sparse Partial Least Squares Discriminant Analysis (sPLS-DA)&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git submodule update --remote --merge
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;pix/splsda.png&#34; alt=&#34;SPLSDA&#34; title=&#34;SPLSDA&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;Check out the update guide&lt;/a&gt; for full instructions and alternative methods.&lt;/p&gt;
+&lt;h4 id=&#34;limma&#34;&gt;Limma&lt;/h4&gt;
 
-&lt;h2 id=&#34;feedback-contributing&#34;&gt;Feedback &amp;amp; Contributing&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;linear models for microarray and RNA-Seq Data&lt;/em&gt;. This function is implemented in limma R package and is prepared to perform a singl-sample t-test using an empirical Bayes method to borrow information between metabolites. The final output is a list of metabolites with a column with a value of the contract (logFC). The AveExpr column gives the average log2-expression level for that gene across all the arrays and channels in the experiment. Column t is the moderated t-statistic. Column P.Value is the associated p-value and adj.P.Value is the p-value adjusted for multiple testing by false discovery rate (FDR).&lt;/p&gt;
 
-&lt;p&gt;Please use the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;issue tracker&lt;/a&gt; to let me know about any bugs or feature requests, or alternatively make a pull request.&lt;/p&gt;
+&lt;h4 id=&#34;correlation-analysis&#34;&gt;Correlation analysis&lt;/h4&gt;
 
-&lt;p&gt;For support, head over to the &lt;a href=&#34;http://discuss.gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo discussion forum&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The Correlation analysis tab includes two different ways to visualize the correlations in your data.&lt;/p&gt;
 
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pairwise Correlation Scatterplot: This scatterplot show the correlation (and p-value of this correlation) between two metabolites in the data. The user can choose any pair of metabolites in the dataset and modify the correlation method (pearson, spearman or kendall) in a reactive, fast and easy panel.&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;pix/correlations.png&#34; alt=&#34;CORR&#34; title=&#34;CORRELATIONS&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Global Correlation Heatmap: Where you can see the correlation matrix of your data in a heatmap format. This plot show all correlations in data at the same time.&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;pix/global_correlations.png&#34; alt=&#34;GCORR&#34; title=&#34;GLOBAL CORRELATIONS&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;random-forest&#34;&gt;Random Forest&lt;/h4&gt;
+
+&lt;p&gt;Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks that operates by constructing a multitude of decision trees. This methods are included in the &lt;strong&gt;&lt;em&gt;machine learning&lt;/em&gt;&lt;/strong&gt; techniques.&lt;/p&gt;
+
+&lt;p&gt;POMA includes a Random Forest algorithm for group classification based on &lt;strong&gt;caret&lt;/strong&gt; R package. POMA interface allows user to tune all the Random Forest parameters in a easy way.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;pix/random_forest.png&#34; alt=&#34;RANDOMFOR&#34; title=&#34;RANDOM FOREST&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;feature-selection&#34;&gt;Feature Selection&lt;/h4&gt;
+
+&lt;p&gt;In statistics, feature selection, also known as variable selection, is the process of selecting a subset of relevant features (for example, metabolites) for use in model construction.&lt;/p&gt;
+
+&lt;p&gt;POMA includes a section thought specified for feature selection. This section includes two of the most used methods for this purpose.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ridge regression&lt;/li&gt;
+&lt;li&gt;Lasso
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;pix/lasso.png&#34; alt=&#34;LASSO&#34; title=&#34;LASSO&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;rank-products&#34;&gt;Rank Products&lt;/h4&gt;
+
+&lt;p&gt;The rank product is a biologically motivated test for the detection of differential features in high throughput experiments. It is a simple &lt;strong&gt;non-parametric&lt;/strong&gt; statistical method based on ranks of fold changes. It can be used to combine ranked lists in various application domains, including proteomics, statistical meta-analysis and general feature selection.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;pix/rankprod.png&#34; alt=&#34;RANKPROD&#34; title=&#34;RANK PRODUCTS&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>/publication/person-re-identification/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0100</pubDate>
+      <title>Epigenome-wide association study in Childhood Obesity: Searching for early markers of late disease risk</title>
+      <link>/talk/epimet-talk/</link>
+      <pubDate>Wed, 16 Jan 2019 00:00:00 +0100</pubDate>
       
-      <guid>/publication/person-re-identification/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+      <guid>/talk/epimet-talk/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Rationale&lt;/strong&gt;: Childhood obesity is one a major Public Health
+issue. Overweight/obese children have a high risk of being
+obese as adults and develop other co-morbidities, including type
+2 diabetes, cardiovascular disease and several types of cancer.
+It has been proposed that epigenetic mechanisms might be
+involved in mediating long-term metabolic dysfunction.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;: Here we analyzed DNA methylation profiles (Infinium
+MethylationEPIC BeadChip, 850K) in whole blood from 26
+obese (zBMI &amp;gt; 2) and 12 control lean pre-pubertal children
+(zBMI &amp;lt; 1).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;:109 CpG sites appeared differentially methylated
+between the two groups (methylation change 10% and FDR
+value &amp;lt;0.05). 5 out of the 109 targets, were located within the
+SPATC1L (Spermatogenesis and Centriole Associated 1 Like)
+gene. Next, we performed a Two Sample Mendelian
+Randomization test, and found that 2 of the 5 CpG sites
+mapping the SPATC1L locus are causal for multiple disorders,
+including childhood obesity, type 2 diabetes, ulcerative colitis
+and inflammatory bowel disease. SPATC1L expression was
+similar in whole blood of obese and lean subjects. However, the
+contiguous genes COL6A2 and COL6A3 (Collagen Type VI
+Alpha 2 and 3 Chains), which are strongly associated to obesity,
+were differentially expressed between the two groups.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Discussion&lt;/strong&gt;: Childhood obesity is associated to a small change
+in DNA methylation (109 CpG sites). In our dataset, only 2 CpG
+sites appeared to play a causative role in the development of
+the disease. We hypothesize that these CpG sites might
+mediate disease risk by modulating the expression of physically
+close genes.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>FBOnto: An ontology to represent food intake data and associate it with metabolomic data</title>
+      <link>/talk/fbonto_bio-talk/</link>
+      <pubDate>Thu, 20 Dec 2018 00:00:00 +0100</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;R Markdown&lt;/h1&gt;
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &amp;lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Including Plots&lt;/h1&gt;
-&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
-  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
-  init.angle = -50, border = NA
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 1: A fancy pie chart.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+      <guid>/talk/fbonto_bio-talk/</guid>
+      <description>&lt;p&gt;Currently, nutrition research generates a lot of complex data hard to analyze and associate with other data or omics such as metabolomics. By itself, metabolomics is closely linked to nutrition. However, it is still difficult to associate these two types of data. One reason for this difficulty is the heterogeneity found in the information provided by participants in nutritional studies about what they have eaten. In order to
+manage this heterogeneity we have decide to build an ontology, describing foods in a
+hierarchichal way that enables a common description of food intake. This ontology
+contains formal naming, definition of the categories, properties, and relations
+between the concepts of two types of data, food and related metabolites.&lt;/p&gt;
+
+&lt;p&gt;This ontology has been created using Protégé 5.2.0 version. As is common in
+ontologies, FBOnto (Food-Biomarker Ontology) has been written in OWL language (Web
+Ontology Language).&lt;/p&gt;
+
+&lt;p&gt;The ontology presented is called FBOnto and is made of two sub-ontologies. The first
+ontology describes foods: from simple such as fruits and vegetables to more complex
+foods such as ratatouille. The second ontology describes metabolites, grouped in their
+different chemical classes. The nodes or elements of these two sub-ontologies are
+connected by the properties of each one, so that if a metabolite is in different foods, it
+will connect with all of them. This ontology allows us to visualize data in a
+bidirectional way, going from metabolomics to nutritional data or vice versa. In
+addition, this ontology can also be useful for other analyses such as enrichment analysis
+or a novel concept, food-enrichment analysis.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Mobile visual clothing search</title>
-      <link>/publication/clothing-search/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0100</pubDate>
+      <title>Lifestyle intervention decreases urine trimethylamine N-oxide levels in prepubertal children with obesity</title>
+      <link>/publication/obesity_carles_2018/</link>
+      <pubDate>Sun, 08 Jul 2018 00:00:00 +0200</pubDate>
       
-      <guid>/publication/clothing-search/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+      <guid>/publication/obesity_carles_2018/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Early lifestyle interventions in children with obesity decrease risk of future obesity
+and metabolic disorders. However, the metabolic effects of such interventions are not
+completely characterized.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Methods:&lt;/strong&gt; We analyzed the impact of lifestyle intervention in the urine metabolome from
+prepubertal children. We studied 34 prepubertal children with obesity before and after a 6-
+month-long lifestyle intervention program. We applied a nuclear magnetic resonance approach
+to obtain the metabolomic profile from urine samples. Partial Least Squares-Discriminant
+Analysis (PLS-DA) was used to achieve group classification and variable importance on
+projection (VIP) for biomarker selection.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Results:&lt;/strong&gt; The intervention reduced caloric intake by 10% (p&amp;lt;0.05) and BMI-SDS by 0.47 SD
+(p&amp;lt;0.001). PLS-DA identified trimethylamine N-oxide (TMAO, VIP=2.21) as the metabolite with
+the highest discrimination properties between groups. Urine TMAO levels were reduced after
+the intervention (p&amp;lt;0.05). TMAO is a biomarker of cardiovascular disease risk and is a product
+of gut microbiota-dependent metabolism of certain dietary compounds, including choline.
+Notably, changes in TMAO levels after the intervention did not correlate to differences in choline
+intake but were inversely associated with fiber intake (p&amp;lt;0.05).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions:&lt;/strong&gt; Our results indicate that TMAO levels are decreased by lifestyle intervention in
+children with obesity.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Epigenome-wide association study in childhood obesity</title>
+      <link>/talk/metnet-talk/</link>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/metnet-talk/</guid>
+      <description>&lt;p&gt;Childhood obesity is one a major Public Health issue. Overweight/obese children have a
+high risk of being obese as adults and develop other co-morbidities, including type 2
+diabetes, cardiovascular disease and several types of cancer. It has been proposed that
+epigenetic mechanisms might be involved in mediating long-term metabolic
+dysfunction.&lt;/p&gt;
+
+&lt;p&gt;Here we analyzed DNA methylation profiles (Infinium MethylationEPIC BeadChip
+850K) in whole blood from 26 obese (zBMI &amp;gt; 2) and 12 control lean pre-pubertal
+children (zBMI &amp;lt; 1). 109 CpG sites appeared differentially methylated between the two
+groups (methylation change &amp;gt;10% and FDR value &amp;lt;0.05). 5 out of the 109 targets, were
+located within the SPATC1L (Spermatogenesis and Centriole Associated 1 Like) gene.&lt;/p&gt;
+
+&lt;p&gt;Next, we performed a Two Sample Mendelian Randomization test, which allows
+determining whether a particular CpG site is causal or consequence for the disease.
+Strikingly, we found that 2 of the 5 CpG sites mapping the SPATC1L locus are causal for
+multiple disorders, including not only childhood obesity, but also type 2
+diabetes, ulcerative colitis and inflammatory bowel disease. SPATC1L expression was
+similar in whole blood of obese and lean subjects. However, the contiguous
+genes COL6A2 (Collagen Type VI Alpha 2 Chain), LSS (Lanosterol Synthase), YBEY (YbeY
+Metallopeptidase) and C21orf58 were differentially expressed between the two groups.&lt;/p&gt;
+
+&lt;p&gt;Together, we show that childhood obesity is associated to a small change in DNA
+methylation (109 CpG sites). In our dataset, only 2 CpG sites appeared to play a
+causative role in the development of the disease. We hypothesize that these CpG sites
+might mediate disease risk by modulating the expression of physically close genes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Epigenome-wide association study in childhood obesity</title>
+      <link>/talk/bioinformatics-talk/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/bioinformatics-talk/</guid>
+      <description>&lt;p&gt;Childhood obesity is one a major Public Health issue. Overweight/obese children have a
+high risk of being obese as adults and develop other co-morbidities, including type 2
+diabetes, cardiovascular disease and several types of cancer. It has been proposed that
+epigenetic mechanisms might be involved in mediating long-term metabolic
+dysfunction.&lt;/p&gt;
+
+&lt;p&gt;Here we analyzed DNA methylation profiles (Infinium MethylationEPIC BeadChip
+850K) in whole blood from 26 obese (zBMI &amp;gt; 2) and 12 control lean pre-pubertal
+children (zBMI &amp;lt; 1). 109 CpG sites appeared differentially methylated between the two
+groups (methylation change &amp;gt;10% and FDR value &amp;lt;0.05). 5 out of the 109 targets, were
+located within the SPATC1L (Spermatogenesis and Centriole Associated 1 Like) gene.&lt;/p&gt;
+
+&lt;p&gt;Next, we performed a Two Sample Mendelian Randomization test, which allows
+determining whether a particular CpG site is causal or consequence for the disease.
+Strikingly, we found that 2 of the 5 CpG sites mapping the SPATC1L locus are causal for
+multiple disorders, including not only childhood obesity, but also type 2
+diabetes, ulcerative colitis and inflammatory bowel disease. SPATC1L expression was
+similar in whole blood of obese and lean subjects. However, the contiguous
+genes COL6A2 (Collagen Type VI Alpha 2 Chain), LSS (Lanosterol Synthase), YBEY (YbeY
+Metallopeptidase) and C21orf58 were differentially expressed between the two groups.&lt;/p&gt;
+
+&lt;p&gt;Together, we show that childhood obesity is associated to a small change in DNA
+methylation (109 CpG sites). In our dataset, only 2 CpG sites appeared to play a
+causative role in the development of the disease. We hypothesize that these CpG sites
+might mediate disease risk by modulating the expression of physically close genes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Epigenome-wide association study in childhood obesity</title>
+      <link>/talk/febs3-talk/</link>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/talk/febs3-talk/</guid>
+      <description>&lt;p&gt;Childhood obesity is one a major Public Health issue. Overweight/obese children have a
+high risk of being obese as adults and develop other co-morbidities, including type 2
+diabetes, cardiovascular disease and several types of cancer. It has been proposed that
+epigenetic mechanisms might be involved in mediating long-term metabolic
+dysfunction.&lt;/p&gt;
+
+&lt;p&gt;Here we analyzed DNA methylation profiles (Infinium MethylationEPIC BeadChip
+850K) in whole blood from 26 obese (zBMI &amp;gt; 2) and 12 control lean pre-pubertal
+children (zBMI &amp;lt; 1). 109 CpG sites appeared differentially methylated between the two
+groups (methylation change &amp;gt;10% and FDR value &amp;lt;0.05). 5 out of the 109 targets, were
+located within the SPATC1L (Spermatogenesis and Centriole Associated 1 Like) gene.&lt;/p&gt;
+
+&lt;p&gt;Next, we performed a Two Sample Mendelian Randomization test, which allows
+determining whether a particular CpG site is causal or consequence for the disease.
+Strikingly, we found that 2 of the 5 CpG sites mapping the SPATC1L locus are causal for
+multiple disorders, including not only childhood obesity, but also type 2
+diabetes, ulcerative colitis and inflammatory bowel disease. SPATC1L expression was
+similar in whole blood of obese and lean subjects. However, the contiguous
+genes COL6A2 (Collagen Type VI Alpha 2 Chain), LSS (Lanosterol Synthase), YBEY (YbeY
+Metallopeptidase) and C21orf58 were differentially expressed between the two groups.&lt;/p&gt;
+
+&lt;p&gt;Together, we show that childhood obesity is associated to a small change in DNA
+methylation (109 CpG sites). In our dataset, only 2 CpG sites appeared to play a
+causative role in the development of the disease. We hypothesize that these CpG sites
+might mediate disease risk by modulating the expression of physically close genes.&lt;/p&gt;
 </description>
     </item>
     
