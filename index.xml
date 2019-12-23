@@ -6,8 +6,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Pol Castellano</copyright>
-    <lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 17 Dec 2019 00:00:00 +0100</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>FOBI: An ontology to represent food intake data and associate it with metabolomic data</title>
+      <link>/talk/fobi_bioinformatics/</link>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/fobi_bioinformatics/</guid>
+      <description>&lt;p&gt;Nutrition research can be conducted by using two complementary approaches: 1) traditional self-reporting methods or 2) via metabolomics techniques to analyze food intake biomarkers in biofluids. However, the complexity and heterogeneity of these two very different types of data often hinder their analysis and integration. To manage this challenge, we have developed a novel ontology that describes food and their associated metabolite entities in a hierarchical way. This ontology uses a formal naming system, category definitions, properties and relations between both types of data.&lt;/p&gt;
+
+&lt;p&gt;The ontology presented is called FOBI (Food-Biomarker Ontology) and it is composed of two interconnected sub-ontologies. One is a ”Food Ontology” consisting of raw foods and prepared foods while the second is a ”Biomarker Ontology” containing food intake biomarkers classified by their chemical classes. These two sub-ontologies are conceptually independent but interconnected by different properties. This allows data and information regarding foods and food biomarkers to be visualized in a bidirectional way, going from metabolomics to nutritional data or vice versa. Potential applications of this ontology include the annotation of foods and biomarkers using a well-defined and consistent nomenclature, the standardized reporting of metabolomics workflows (e.g. metabolite identification, experimental design), or the application of different enrichment analysis approaches to analyze nutrimetabolomic data.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>POMA: Shiny Framework Statistical analysis tool for targeted metabolomic data</title>
