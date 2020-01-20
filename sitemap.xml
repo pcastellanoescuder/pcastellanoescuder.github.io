@@ -3,8 +3,8 @@
     
     <url>
     
-      <loc>/talk/fobi_bioinformatics/</loc>
-      <lastmod>2019-12-17T00:00:00+01:00</lastmod>
+      <loc>/talk/fobi_metabomeeting2020/</loc>
+      <lastmod>2020-01-22T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -12,8 +12,16 @@
     <url>
     
       <loc>/</loc>
-      <lastmod>2019-12-17T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-22T00:00:00+01:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/fobi_bioinformatics/</loc>
+      <lastmod>2019-12-17T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -171,6 +179,21 @@
     
       <loc>/categories/</loc>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/fobi/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/project/fobi/</loc>
     </url>
     
   

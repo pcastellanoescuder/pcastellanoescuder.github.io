@@ -6,8 +6,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Pol Castellano</copyright>
-    <lastBuildDate>Tue, 17 Dec 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jan 2020 00:00:00 +0100</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>FOBI: An ontology to represent food intake data and associate it with metabolomic data</title>
+      <link>/talk/fobi_metabomeeting2020/</link>
+      <pubDate>Wed, 22 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/fobi_metabomeeting2020/</guid>
+      <description>&lt;p&gt;Nutrition research can be conducted by using two complementary approaches: 1) traditional self-reporting methods or 2) via metabolomics techniques to analyze food intake biomarkers in biofluids. However, the complexity and heterogeneity of these two very different types of data often hinder their analysis and integration. To manage this challenge, we have developed a novel ontology that describes food and their associated metabolite entities in a hierarchical way. This ontology uses a formal naming system, category definitions, properties and relations between both types of data.&lt;/p&gt;
+
+&lt;p&gt;The ontology presented is called FOBI (Food-Biomarker Ontology) and it is composed of two interconnected sub-ontologies. One is a ”Food Ontology” consisting of raw foods and prepared foods while the second is a ”Biomarker Ontology” containing food intake biomarkers classified by their chemical classes. These two sub-ontologies are conceptually independent but interconnected by different properties. This allows data and information regarding foods and food biomarkers to be visualized in a bidirectional way, going from metabolomics to nutritional data or vice versa. Potential applications of this ontology include the annotation of foods and biomarkers using a well-defined and consistent nomenclature, the standardized reporting of metabolomics workflows (e.g. metabolite identification, experimental design), or the application of different enrichment analysis approaches to analyze nutrimetabolomic data.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>FOBI: An ontology to represent food intake data and associate it with metabolomic data</title>
@@ -65,192 +77,7 @@
       <pubDate>Mon, 21 Jan 2019 00:00:00 +0100</pubDate>
       
       <guid>/project/poma/</guid>
-      <description>
-
-&lt;h1 id=&#34;poma-statistical-analysis-tool-for-targeted-metabolomic-data&#34;&gt;POMA: Statistical analysis tool for targeted metabolomic data&lt;/h1&gt;
-
-&lt;hr /&gt;
-
-&lt;h4&gt;&lt;b&gt;&lt;span style=&#34;color:#f49338&#34;&gt;Fast:&lt;/span&gt;&lt;/b&gt; Analyze and visualize your data in few steps&lt;/h4&gt;
-&lt;h4&gt;&lt;b&gt;&lt;span style=&#34;color:#f49338&#34;&gt;Friendly:&lt;/span&gt;&lt;/b&gt; POMA is very intuitive and no needed programming skills in any step of workflow&lt;/h4&gt;
-&lt;h4&gt;&lt;b&gt;&lt;span style=&#34;color:#f49338&#34;&gt;Free:&lt;/span&gt;&lt;/b&gt; All POMA options and analysis are completely free for all users&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;input-data&#34;&gt;Input Data&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Upload your data in the &lt;em&gt;&amp;ldquo;Input Data&amp;rdquo;&lt;/em&gt; tab.&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Data must be a .CSV &lt;em&gt;comma-separated-value&lt;/em&gt; file.&lt;/li&gt;
-&lt;li&gt;First/Left-hand column must be sample IDs.&lt;/li&gt;
-&lt;li&gt;Second/Left-hand column must be sample groups.&lt;/li&gt;
-&lt;li&gt;Ideally, first row should be column names (metabolites).&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Metabolomic Data&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Each row denotes a sample and each column denotes a metabolite.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;pix/met_data.png&#34; alt=&#34;Metabolites&#34; title=&#34;Metabolomic Data&#34; width=&#34;600&#34; height=&#34;250&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Covariates file (optional)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Each row denotes a sample (the same as in metabolomic data) and each column denotes covariate.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;pix/cov_data.png&#34; alt=&#34;Covariates&#34; title=&#34;Covariates File&#34; width=&#34;500&#34; height=&#34;180&#34; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;impute-values&#34;&gt;Impute Values&lt;/h3&gt;
-
-&lt;p&gt;Metabolomics data usually presents a high number of missing values. By default, the missing values are treated as the result of low signal intensity.&lt;/p&gt;
-
-&lt;p&gt;For this reason, the imputation of missing values is an essential step in metabolomic data analysis workflow. To deal with that, POMA provides the &lt;strong&gt;Impute Value&lt;/strong&gt; panel which allows the user:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;To remove all metabolites of the data that have more of specific percentage (defined by user) of missing values in ALL study groups. By default this parameter is 20%.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;To impute missing values of the data using different methods such as:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;replace by zero&lt;/li&gt;
-&lt;li&gt;replace by half of the minimum positive value in the original data&lt;/li&gt;
-&lt;li&gt;replace by median&lt;/li&gt;
-&lt;li&gt;replace by mean&lt;/li&gt;
-&lt;li&gt;replace by minimum&lt;/li&gt;
-&lt;li&gt;KNN method (default)&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;normalization&#34;&gt;Normalization&lt;/h3&gt;
-
-&lt;p&gt;Normalization is required to make all metabolites comparable among them. By default the application do not normalize data, however it is recommended to select one normalization method. POMA app offers all these following different types of normalization methods:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Autoscaling&lt;/li&gt;
-&lt;li&gt;Level scaling&lt;/li&gt;
-&lt;li&gt;Log scaling&lt;/li&gt;
-&lt;li&gt;Log transformation&lt;/li&gt;
-&lt;li&gt;Vast scaling&lt;/li&gt;
-&lt;li&gt;Log Pareto scaling&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;statistics&#34;&gt;Statistics&lt;/h3&gt;
-
-&lt;p&gt;The Statistical Analysis tab contains a set of different panels to analyze the data:  1) Univariate analysis; 2) Multivariate analysis; 3) Limma; 4) Correlation analysis; 5) Random Forest; 6) Feature selection and 7) Rank Products. Each one of them includes different options and methods. Below is a brief explanation of each one:&lt;/p&gt;
-
-&lt;h4 id=&#34;univariate-analysis&#34;&gt;Univariate analysis&lt;/h4&gt;
-
-&lt;p&gt;The Univariate Analysis panel contains five types of analysis to perform comparaisions of each group per each metabolite.&lt;/p&gt;
-
-&lt;h5 id=&#34;u-parametric-tests-u&#34;&gt;&lt;u&gt;Parametric tests&lt;/u&gt;&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;T-test: The results can be shown with an interactive &lt;strong&gt;volcano plot&lt;/strong&gt;.&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;pix/volcano.png&#34; alt=&#34;VOLCANO&#34; title=&#34;VOLCANO PLOT&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;One-way Analysis of Variance (ANOVA): If data has a normal distribution and more than two groups.&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;b&gt;&lt;i&gt;All of the previous methods can be corrected by covariables if the user has provided a covariate matrix.&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;u-non-parametric-tests-u&#34;&gt;&lt;u&gt;Non-Parametric tests&lt;/u&gt;&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Mann-Whitney U Test: If data has two groups and non-normal distribution. If data is paired, this test becomes to Wilcoxon Signed Rank Test.&lt;/li&gt;
-&lt;li&gt;Kruskal Wallis Test: If data has a non-normal distribution but more than two groups.
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;multivariate-analysis&#34;&gt;Multivariate analysis&lt;/h4&gt;
-
-&lt;p&gt;This step is powered by &lt;strong&gt;mixOmics R package&lt;/strong&gt;. POMA multivariate analysis includes three principal multivariate methods:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Principal Component Analysis (PCA)&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;pix/pca.png&#34; alt=&#34;PCA&#34; title=&#34;PCA&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Partial Least Squares Discriminant Analysis (PLS-DA)&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;pix/plsda.png&#34; alt=&#34;PLSDA&#34; title=&#34;PLSDA&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;
-  &lt;img src=&#34;pix/plsda_errors.png&#34; alt=&#34;PLSDAERR&#34; title=&#34;PLSDA ERRORS&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Sparse Partial Least Squares Discriminant Analysis (sPLS-DA)&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;pix/splsda.png&#34; alt=&#34;SPLSDA&#34; title=&#34;SPLSDA&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;limma&#34;&gt;Limma&lt;/h4&gt;
-
-&lt;p&gt;&lt;em&gt;linear models for microarray and RNA-Seq Data&lt;/em&gt;. This function is implemented in limma R package and is prepared to perform a singl-sample t-test using an empirical Bayes method to borrow information between metabolites. The final output is a list of metabolites with a column with a value of the contract (logFC). The AveExpr column gives the average log2-expression level for that gene across all the arrays and channels in the experiment. Column t is the moderated t-statistic. Column P.Value is the associated p-value and adj.P.Value is the p-value adjusted for multiple testing by false discovery rate (FDR).&lt;/p&gt;
-
-&lt;h4 id=&#34;correlation-analysis&#34;&gt;Correlation analysis&lt;/h4&gt;
-
-&lt;p&gt;The Correlation analysis tab includes two different ways to visualize the correlations in your data.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Pairwise Correlation Scatterplot: This scatterplot show the correlation (and p-value of this correlation) between two metabolites in the data. The user can choose any pair of metabolites in the dataset and modify the correlation method (pearson, spearman or kendall) in a reactive, fast and easy panel.&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;pix/correlations.png&#34; alt=&#34;CORR&#34; title=&#34;CORRELATIONS&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Global Correlation Heatmap: Where you can see the correlation matrix of your data in a heatmap format. This plot show all correlations in data at the same time.&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;pix/global_correlations.png&#34; alt=&#34;GCORR&#34; title=&#34;GLOBAL CORRELATIONS&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;random-forest&#34;&gt;Random Forest&lt;/h4&gt;
-
-&lt;p&gt;Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks that operates by constructing a multitude of decision trees. This methods are included in the &lt;strong&gt;&lt;em&gt;machine learning&lt;/em&gt;&lt;/strong&gt; techniques.&lt;/p&gt;
-
-&lt;p&gt;POMA includes a Random Forest algorithm for group classification based on &lt;strong&gt;caret&lt;/strong&gt; R package. POMA interface allows user to tune all the Random Forest parameters in a easy way.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;pix/random_forest.png&#34; alt=&#34;RANDOMFOR&#34; title=&#34;RANDOM FOREST&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;feature-selection&#34;&gt;Feature Selection&lt;/h4&gt;
-
-&lt;p&gt;In statistics, feature selection, also known as variable selection, is the process of selecting a subset of relevant features (for example, metabolites) for use in model construction.&lt;/p&gt;
-
-&lt;p&gt;POMA includes a section thought specified for feature selection. This section includes two of the most used methods for this purpose.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Ridge regression&lt;/li&gt;
-&lt;li&gt;Lasso
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;pix/lasso.png&#34; alt=&#34;LASSO&#34; title=&#34;LASSO&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;rank-products&#34;&gt;Rank Products&lt;/h4&gt;
-
-&lt;p&gt;The rank product is a biologically motivated test for the detection of differential features in high throughput experiments. It is a simple &lt;strong&gt;non-parametric&lt;/strong&gt; statistical method based on ranks of fold changes. It can be used to combine ranked lists in various application domains, including proteomics, statistical meta-analysis and general feature selection.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;pix/rankprod.png&#34; alt=&#34;RANKPROD&#34; title=&#34;RANK PRODUCTS&#34; width=&#34;400&#34; height=&#34;230&#34; /&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -452,6 +279,15 @@ methylation (109 CpG sites). In our dataset, only 2 CpG sites appeared to play a
 causative role in the development of the disease. We hypothesize that these CpG sites
 might mediate disease risk by modulating the expression of physically close genes.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>FOBI</title>
+      <link>/project/fobi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project/fobi/</guid>
+      <description></description>
     </item>
     
   </channel>
