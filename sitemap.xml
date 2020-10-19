@@ -3,17 +3,72 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/talk/fobi_metabomeeting2020/</loc>
-    <lastmod>2020-01-22T00:00:00+01:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2020-10-15T00:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-01-22T00:00:00+01:00</lastmod>
+    <loc>/talk/biocasia2020/</loc>
+    <lastmod>2020-10-15T00:00:00+02:00</lastmod>
   </url>
   
   <url>
     <loc>/talk/</loc>
+    <lastmod>2020-10-15T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication-type/2/</loc>
+    <lastmod>2020-04-22T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/alex-sanchez-pla/</loc>
+    <lastmod>2020-04-22T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2020-04-22T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/cristina-andres-lacueva/</loc>
+    <lastmod>2020-04-22T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/david-s.-wishart/</loc>
+    <lastmod>2020-04-22T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/database_2020/</loc>
+    <lastmod>2020-04-22T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/pol-castellano-escuder/</loc>
+    <lastmod>2020-04-22T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2020-04-22T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2020-04-22T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/raul-gonzalez-dominguez/</loc>
+    <lastmod>2020-04-22T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/fobi_metabomeeting2020/</loc>
     <lastmod>2020-01-22T00:00:00+01:00</lastmod>
   </url>
   
@@ -73,16 +128,6 @@
   </url>
   
   <url>
-    <loc>/publication-type/2/</loc>
-    <lastmod>2018-07-08T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/</loc>
-    <lastmod>2018-07-08T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/author/carles-lerin/</loc>
     <lastmod>2018-07-08T00:00:00+02:00</lastmod>
   </url>
@@ -119,16 +164,6 @@
   
   <url>
     <loc>/author/pol-castellano/</loc>
-    <lastmod>2018-07-08T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2018-07-08T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
     <lastmod>2018-07-08T00:00:00+02:00</lastmod>
   </url>
   

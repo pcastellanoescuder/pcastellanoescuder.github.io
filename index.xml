@@ -5,12 +5,30 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Pol Castellano</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Wed, 22 Jan 2020 00:00:00 +0100</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Thu, 15 Oct 2020 00:00:00 +0200</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Pol Castellano</title>
       <link>/</link>
     </image>
+    
+    <item>
+      <title>POMAShiny: An User-friendly Web-based Workflow for Statistical Analysis of Mass Spectrometry Data</title>
+      <link>/talk/biocasia2020/</link>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 +0200</pubDate>
+      <guid>/talk/biocasia2020/</guid>
+      <description>&lt;p&gt;Mass spectrometry, like other high-throughput technologies, usually faces a data mining challenge to provide an understandable output to advance in biomarker discovery and precision medicine. Often, statistical analysis is one of the hard points and it’s critical in the subsequent biological interpretation of the results. Due to this fact combined with the computational programming skills needed for this type of analysis, several bioinformatic tools have emerged to simplify mass spectrometry data analysis. However, sometimes the analysis is still limited to a few hidebound statistical methods and to a low-flexible datasets. POMAShiny is a web-based tool that provides a structured, flexible and user- friendly workflow for the visualization, exploratory and statistical analysis of mass spectrometry data. This tool integrates several statistical methods, some of them widely used in other type of omics, and it’s based on the POMA R/Bioconductor package, which increases the reproducibility and flexibility of analysis outside the web environment. POMAShiny and POMA are both freely available at &lt;a href=&#34;https://github.com/pcastellanoescuder/POMAShiny&#34;&gt;https://github.com/pcastellanoescuder/POMAShiny&lt;/a&gt; and &lt;a href=&#34;https://github.com/pcastellanoescuder/POMA&#34;&gt;https://github.com/pcastellanoescuder/POMA&lt;/a&gt; , respectively.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FOBI: an ontology to represent food intake data and associate it with metabolomic data</title>
+      <link>/publication/database_2020/</link>
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0200</pubDate>
+      <guid>/publication/database_2020/</guid>
+      <description>&lt;p&gt;Nutrition research can be conducted by using two complementary approaches: (i) traditional self-reporting methods or (ii) via metabolomics techniques to analyze food intake biomarkers in biofluids. However, the complexity and heterogeneity of these two very different types of data often hinder their analysis and integration. To manage this challenge, we have developed a novel ontology that describes food and their associated metabolite entities in a hierarchical way. This ontology uses a formal naming system, category definitions, properties and relations between both types of data. The ontology presented is called FOBI (Food-Biomarker Ontology) and it is composed of two interconnected sub-ontologies. One is a ’Food Ontology’ consisting of raw foods and ‘multi-component foods’ while the second is a ‘Biomarker Ontology’ containing food intake biomarkers classified by their chemical classes. These two sub-ontologies are conceptually independent but interconnected by different properties. This allows data and information regarding foods and food biomarkers to be visualized in a bidirectional way, going from metabolomics to nutritional data or vice versa. Potential applications of this ontology include the annotation of foods and biomarkers using a well-defined and consistent nomenclature, the standardized reporting of metabolomics workflows (e.g. metabolite identification, experimental design) or the application of different enrich- ment analysis approaches to analyze nutrimetabolomic data. Availability: FOBI is freely available in both OWL (Web Ontology Language) and OBO (Open Biomedical Ontolo- gies) formats at the project’s Github repository (&lt;a href=&#34;https://github.com/pcastellanoescuder/FoodBiomarkerOntology&#34;&gt;https://github.com/pcastellanoescuder/FoodBiomarkerOntology&lt;/a&gt;) and FOBI visualization tool is available in &lt;a href=&#34;https://polcastellano.shinyapps.io/FOBI_Visualization_Tool/&#34;&gt;https://polcastellano.shinyapps.io/FOBI_Visualization_Tool/&lt;/a&gt; .&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>FOBI: An ontology to represent food intake data and associate it with metabolomic data</title>

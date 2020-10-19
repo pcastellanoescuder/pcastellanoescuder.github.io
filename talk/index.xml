@@ -5,12 +5,21 @@
     <link>/talk/</link>
       <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Wed, 22 Jan 2020 00:00:00 +0100</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Thu, 15 Oct 2020 00:00:00 +0200</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>/talk/</link>
     </image>
+    
+    <item>
+      <title>POMAShiny: An User-friendly Web-based Workflow for Statistical Analysis of Mass Spectrometry Data</title>
+      <link>/talk/biocasia2020/</link>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 +0200</pubDate>
+      <guid>/talk/biocasia2020/</guid>
+      <description>&lt;p&gt;Mass spectrometry, like other high-throughput technologies, usually faces a data mining challenge to provide an understandable output to advance in biomarker discovery and precision medicine. Often, statistical analysis is one of the hard points and it’s critical in the subsequent biological interpretation of the results. Due to this fact combined with the computational programming skills needed for this type of analysis, several bioinformatic tools have emerged to simplify mass spectrometry data analysis. However, sometimes the analysis is still limited to a few hidebound statistical methods and to a low-flexible datasets. POMAShiny is a web-based tool that provides a structured, flexible and user- friendly workflow for the visualization, exploratory and statistical analysis of mass spectrometry data. This tool integrates several statistical methods, some of them widely used in other type of omics, and it’s based on the POMA R/Bioconductor package, which increases the reproducibility and flexibility of analysis outside the web environment. POMAShiny and POMA are both freely available at &lt;a href=&#34;https://github.com/pcastellanoescuder/POMAShiny&#34;&gt;https://github.com/pcastellanoescuder/POMAShiny&lt;/a&gt; and &lt;a href=&#34;https://github.com/pcastellanoescuder/POMA&#34;&gt;https://github.com/pcastellanoescuder/POMA&lt;/a&gt; , respectively.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>FOBI: An ontology to represent food intake data and associate it with metabolomic data</title>
