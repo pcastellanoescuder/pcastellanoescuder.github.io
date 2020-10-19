@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ÓscarvYanes | Pol Castellano</title>
+    <link>/author/oscarvyanes/</link>
+      <atom:link href="/author/oscarvyanes/index.xml" rel="self" type="application/rss+xml" />
+    <description>ÓscarvYanes</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Sun, 08 Jul 2018 00:00:00 +0200</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>ÓscarvYanes</title>
+      <link>/author/oscarvyanes/</link>
+    </image>
+    
+    <item>
+      <title>Lifestyle intervention decreases urine trimethylamine N-oxide levels in prepubertal children with obesity</title>
+      <link>/publication/obesity_carles_2018/</link>
+      <pubDate>Sun, 08 Jul 2018 00:00:00 +0200</pubDate>
+      <guid>/publication/obesity_carles_2018/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Early lifestyle interventions in children with obesity decrease risk of future obesity
+and metabolic disorders. However, the metabolic effects of such interventions are not
+completely characterized.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Methods:&lt;/strong&gt; We analyzed the impact of lifestyle intervention in the urine metabolome from
+prepubertal children. We studied 34 prepubertal children with obesity before and after a 6-
+month-long lifestyle intervention program. We applied a nuclear magnetic resonance approach
+to obtain the metabolomic profile from urine samples. Partial Least Squares-Discriminant
+Analysis (PLS-DA) was used to achieve group classification and variable importance on
+projection (VIP) for biomarker selection.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Results:&lt;/strong&gt; The intervention reduced caloric intake by 10% (p&amp;lt;0.05) and BMI-SDS by 0.47 SD
+(p&amp;lt;0.001). PLS-DA identified trimethylamine N-oxide (TMAO, VIP=2.21) as the metabolite with
+the highest discrimination properties between groups. Urine TMAO levels were reduced after
+the intervention (p&amp;lt;0.05). TMAO is a biomarker of cardiovascular disease risk and is a product
+of gut microbiota-dependent metabolism of certain dietary compounds, including choline.
+Notably, changes in TMAO levels after the intervention did not correlate to differences in choline
+intake but were inversely associated with fiber intake (p&amp;lt;0.05).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusions:&lt;/strong&gt; Our results indicate that TMAO levels are decreased by lifestyle intervention in
+children with obesity.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
