@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Pol Castellano</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Thu, 15 Oct 2020 00:00:00 +0200</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Wed, 28 Oct 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Pol Castellano</title>
@@ -13,11 +13,65 @@
     </image>
     
     <item>
+      <title>Immunological Risk Profile in COVID-19, the Experience of a Single Academic Hospital in Spain</title>
+      <link>/talk/focis_covid2020/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0100</pubDate>
+      <guid>/talk/focis_covid2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FOBI: An ontology to represent food intake data and associate it with metabolomic data</title>
+      <link>/talk/metabolomics2020/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0100</pubDate>
+      <guid>/talk/metabolomics2020/</guid>
+      <description>&lt;p&gt;Nutrition research can be conducted by using two complementary approaches: (i) traditional self-reporting methods or (ii) via metabolomics techniques to analyze food intake biomarkers in biofluids. However, the complexity and heterogeneity of these two very different types of data often hinder their analysis and integration. To manage this challenge, we have developed a novel ontology that describes food and their associated metabolite entities in a hierarchical way. This ontology uses a formal naming system, category definitions, properties and relations between both types of data. The ontology presented is called FOBI (Food-Biomarker Ontology) and it is composed of two interconnected sub-ontologies. One is a ’Food Ontology’ consisting of raw foods and ‘multi-component foods’ while the second is a ‘Biomarker Ontology’ containing food intake biomarkers classified by their chemical classes. These two sub-ontologies are conceptually independent but interconnected by different properties. This allows data and information regarding foods and food biomarkers to be visualized in a bidirectional way, going from metabolomics to nutritional data or vice versa. Potential applications of this ontology include the annotation of foods and biomarkers using a well-defined and consistent nomenclature, the standardized reporting of metabolomics workflows (e.g. metabolite identification, experimental design) or the application of different enrich- ment analysis approaches to analyze nutrimetabolomic data. Availability: FOBI is freely available in both OWL (Web Ontology Language) and OBO (Open Biomedical Ontolo- gies) formats at the project’s Github repository (&lt;a href=&#34;https://github.com/pcastellanoescuder/FoodBiomarkerOntology&#34;&gt;https://github.com/pcastellanoescuder/FoodBiomarkerOntology&lt;/a&gt;) and FOBI visualization tool is available in &lt;a href=&#34;https://polcastellano.shinyapps.io/FOBI_Visualization_Tool/&#34;&gt;https://polcastellano.shinyapps.io/FOBI_Visualization_Tool/&lt;/a&gt; .&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>POMAShiny: An User-friendly Web-based Workflow for Statistical Analysis of Mass Spectrometry Data</title>
       <link>/talk/biocasia2020/</link>
       <pubDate>Thu, 15 Oct 2020 00:00:00 +0200</pubDate>
       <guid>/talk/biocasia2020/</guid>
       <description>&lt;p&gt;Mass spectrometry, like other high-throughput technologies, usually faces a data mining challenge to provide an understandable output to advance in biomarker discovery and precision medicine. Often, statistical analysis is one of the hard points and it’s critical in the subsequent biological interpretation of the results. Due to this fact combined with the computational programming skills needed for this type of analysis, several bioinformatic tools have emerged to simplify mass spectrometry data analysis. However, sometimes the analysis is still limited to a few hidebound statistical methods and to a low-flexible datasets. POMAShiny is a web-based tool that provides a structured, flexible and user- friendly workflow for the visualization, exploratory and statistical analysis of mass spectrometry data. This tool integrates several statistical methods, some of them widely used in other type of omics, and it’s based on the POMA R/Bioconductor package, which increases the reproducibility and flexibility of analysis outside the web environment. POMAShiny and POMA are both freely available at &lt;a href=&#34;https://github.com/pcastellanoescuder/POMAShiny&#34;&gt;https://github.com/pcastellanoescuder/POMAShiny&lt;/a&gt; and &lt;a href=&#34;https://github.com/pcastellanoescuder/POMA&#34;&gt;https://github.com/pcastellanoescuder/POMA&lt;/a&gt; , respectively.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FOBI: An ontology to represent food intake data and associate it with metabolomic data</title>
+      <link>/talk/ifow2020/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:00 +0200</pubDate>
+      <guid>/talk/ifow2020/</guid>
+      <description>&lt;p&gt;Nutrition research can be conducted by using two complementary approaches: (i) traditional self-reporting methods or (ii) via metabolomics techniques to analyze food intake biomarkers in biofluids. However, the complexity and heterogeneity of these two very different types of data often hinder their analysis and integration. To manage this challenge, we have developed a novel ontology that describes food and their associated metabolite entities in a hierarchical way. This ontology uses a formal naming system, category definitions, properties and relations between both types of data. The ontology presented is called FOBI (Food-Biomarker Ontology) and it is composed of two interconnected sub-ontologies. One is a ’Food Ontology’ consisting of raw foods and ‘multi-component foods’ while the second is a ‘Biomarker Ontology’ containing food intake biomarkers classified by their chemical classes. These two sub-ontologies are conceptually independent but interconnected by different properties. This allows data and information regarding foods and food biomarkers to be visualized in a bidirectional way, going from metabolomics to nutritional data or vice versa. Potential applications of this ontology include the annotation of foods and biomarkers using a well-defined and consistent nomenclature, the standardized reporting of metabolomics workflows (e.g. metabolite identification, experimental design) or the application of different enrich- ment analysis approaches to analyze nutrimetabolomic data. Availability: FOBI is freely available in both OWL (Web Ontology Language) and OBO (Open Biomedical Ontolo- gies) formats at the project’s Github repository (&lt;a href=&#34;https://github.com/pcastellanoescuder/FoodBiomarkerOntology&#34;&gt;https://github.com/pcastellanoescuder/FoodBiomarkerOntology&lt;/a&gt;) and FOBI visualization tool is available in &lt;a href=&#34;https://polcastellano.shinyapps.io/FOBI_Visualization_Tool/&#34;&gt;https://polcastellano.shinyapps.io/FOBI_Visualization_Tool/&lt;/a&gt; .&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Perfil inmunológico de riesgo en COVID-19</title>
+      <link>/talk/sei_covid2020/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0200</pubDate>
+      <guid>/talk/sei_covid2020/</guid>
+      <description>&lt;p&gt;En COVID-19 el pronóstico vital viene determinado, entre otros factores, por el grado hiperinflamación
+inducido por la infección por SARS-CoV-2. Disponer de buenos marcadores iniciales para pronosticar el desarrollo
+de esta hiperinflamación puede resultar de gran utilidad para el cribado y el inicio de tratamiento con
+inmunoduladores. Para identificar el valor pronostico de los distintos marcadores de laboratorio en uso hemos
+analizado datos demográficos y 32 parámetros de laboratorio en relación con el resultado final 1292 enfermos
+mayores de 18 años (716 V y 576 M) no tratados que acudieron a urgencias entre el 11/03 y 26/05 2020. Se
+confirmó que la edad es el factor que más influye en el pronóstico, alta a domicilio, edad media 54,114,8 frente a
+fallecimiento 74,3 10,8 con una p corregida &amp;lt;0,001 por lo que en los modelos predictivos se mantuvo la edad.&lt;/p&gt;
+&lt;p&gt;Los datos se han analizado mediante la aplicación web Covid Explorer basada en R y Shiny desarrollada por los
+autores &lt;a href=&#34;http://uebshiny.vhir.org:3838/shiny_covid19/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://uebshiny.vhir.org:3838/shiny_covid19/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;El grado de asociación de los marcadores de laboratorio analizados mediante t-test sigue la siguiente jerarquía.
+IL-6 (log) &amp;gt; Proteína C reactiva (log) &amp;gt; linfocitos (%) &amp;gt; urea &amp;gt; neutrófilos (%) &amp;gt; D-Dímero (log) &amp;gt; linfocitos (n) &amp;gt; ratio
+neutrófilo/linfocito (NLR) &amp;gt; Hb &amp;gt; neutrófilos (n) &amp;gt; ferritina (log) &amp;gt; tpo protrombina INR. La primera componente del
+análisis de componentes principales explica el 24,8% de la variabilidad total de los datos y sugiere que las variables
+que más peso tienen en el resultado “alta a domicilio” son la cifra total de linfocitos y en el de “fallecimiento”, el
+número total de neutrófilos, la IL-6, la proteína C reactiva.&lt;/p&gt;
+&lt;p&gt;La aplicación del modelo predictivo lasso dio para las variables, antes enumerados más fibrinógeno, una precisión
+por encima de 0.85. Estos datos validan estudios previos en grupos menores y demuestran la posibilidad de
+generar modelos predictivos bastante precisos en el momento inicial, para lo cual convendría, probablemente,
+incluir más datos que miden el estado hiperinflamatorio inicial de estos enfermos.&lt;/p&gt;
 </description>
     </item>
     
@@ -32,9 +86,9 @@
     
     <item>
       <title>FOBI: An ontology to represent food intake data and associate it with metabolomic data</title>
-      <link>/talk/fobi_metabomeeting2020/</link>
+      <link>/talk/metabomeeting2020/</link>
       <pubDate>Wed, 22 Jan 2020 00:00:00 +0100</pubDate>
-      <guid>/talk/fobi_metabomeeting2020/</guid>
+      <guid>/talk/metabomeeting2020/</guid>
       <description>&lt;p&gt;Nutrition research can be conducted by using two complementary approaches: 1) traditional self-reporting methods or 2) via metabolomics techniques to analyze food intake biomarkers in biofluids. However, the complexity and heterogeneity of these two very different types of data often hinder their analysis and integration. To manage this challenge, we have developed a novel ontology that describes food and their associated metabolite entities in a hierarchical way. This ontology uses a formal naming system, category definitions, properties and relations between both types of data.&lt;/p&gt;
 &lt;p&gt;The ontology presented is called FOBI (Food-Biomarker Ontology) and it is composed of two interconnected sub-ontologies. One is a ”Food Ontology” consisting of raw foods and prepared foods while the second is a ”Biomarker Ontology” containing food intake biomarkers classified by their chemical classes. These two sub-ontologies are conceptually independent but interconnected by different properties. This allows data and information regarding foods and food biomarkers to be visualized in a bidirectional way, going from metabolomics to nutritional data or vice versa. Potential applications of this ontology include the annotation of foods and biomarkers using a well-defined and consistent nomenclature, the standardized reporting of metabolomics workflows (e.g. metabolite identification, experimental design), or the application of different enrichment analysis approaches to analyze nutrimetabolomic data.&lt;/p&gt;
 </description>
@@ -42,9 +96,9 @@
     
     <item>
       <title>FOBI: An ontology to represent food intake data and associate it with metabolomic data</title>
-      <link>/talk/fobi_bioinformatics/</link>
+      <link>/talk/jbg2019/</link>
       <pubDate>Tue, 17 Dec 2019 00:00:00 +0100</pubDate>
-      <guid>/talk/fobi_bioinformatics/</guid>
+      <guid>/talk/jbg2019/</guid>
       <description>&lt;p&gt;Nutrition research can be conducted by using two complementary approaches: 1) traditional self-reporting methods or 2) via metabolomics techniques to analyze food intake biomarkers in biofluids. However, the complexity and heterogeneity of these two very different types of data often hinder their analysis and integration. To manage this challenge, we have developed a novel ontology that describes food and their associated metabolite entities in a hierarchical way. This ontology uses a formal naming system, category definitions, properties and relations between both types of data.&lt;/p&gt;
 &lt;p&gt;The ontology presented is called FOBI (Food-Biomarker Ontology) and it is composed of two interconnected sub-ontologies. One is a ”Food Ontology” consisting of raw foods and prepared foods while the second is a ”Biomarker Ontology” containing food intake biomarkers classified by their chemical classes. These two sub-ontologies are conceptually independent but interconnected by different properties. This allows data and information regarding foods and food biomarkers to be visualized in a bidirectional way, going from metabolomics to nutritional data or vice versa. Potential applications of this ontology include the annotation of foods and biomarkers using a well-defined and consistent nomenclature, the standardized reporting of metabolomics workflows (e.g. metabolite identification, experimental design), or the application of different enrichment analysis approaches to analyze nutrimetabolomic data.&lt;/p&gt;
 </description>
@@ -52,9 +106,9 @@
     
     <item>
       <title>POMA: Shiny Framework Statistical analysis tool for targeted metabolomic data</title>
-      <link>/talk/poma_user2019/</link>
+      <link>/talk/user2019/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0200</pubDate>
-      <guid>/talk/poma_user2019/</guid>
+      <guid>/talk/user2019/</guid>
       <description>&lt;p&gt;Similarly to other high-throughput technologies, metabolomics usually faces a data mining challenge to provide an understandable and useful output to advance in biomarker discovery and precision medicine. Biological interpretation of the results is one of the hard points and several bioinformatics tools have emerged to simplify and improve this step. However, sometimes these tools accept only very simplistic data structures and, for example, they do not even accept data with several covariates.&lt;/p&gt;
 &lt;p&gt;POMA is a free, friendly and fast Shiny interface for analysing and visualization data after an analytical targeted metabolomics process and its hosted on &lt;a href=&#34;https://polcastellano.shinyapps.io/POMA/&#34;&gt;https://polcastellano.shinyapps.io/POMA/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;POMA allows the user to go from the raw data to statistical analysis. The analysis is organized in three blocks: “Load Data” (where user can upload metabolite data and a covariates file), “Pre-processing” (value imputation and normalization) and “Statistical analysis” (univariate and multivariate methods, limma, correlation analysis, feature selection methods, random forest, etc.). These steps include multiple types of interactive data visualization integrated in an intuitive user interface that requires no programming skills. Finally, POMA also generates different automatic statistical and exploratory reports to facilitate the analysis and interpretation of the results.&lt;/p&gt;
@@ -72,9 +126,9 @@
     
     <item>
       <title>POMA: Shiny Framework Statistical analysis tool for targeted metabolomic data</title>
-      <link>/talk/poma-talk/</link>
+      <link>/talk/biostatnet2019/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0100</pubDate>
-      <guid>/talk/poma-talk/</guid>
+      <guid>/talk/biostatnet2019/</guid>
       <description>&lt;p&gt;Similarly to other high-throughput technologies, metabolomics usually faces a data mining challenge to provide an understandable and useful output to advance in biomarker discovery and precision medicine. Biological interpretation of the results is one of the hard points and several bioinformatics tools have emerged to simplify and improve this step. However, sometimes these tools accept only very simplistic data structures and, for example, they do not even accept data with several covariates.&lt;/p&gt;
 &lt;p&gt;POMA is a free, friendly and fast Shiny interface for analysing and visualization data after an analytical targeted metabolomics process and its hosted on &lt;a href=&#34;https://polcastellano.shinyapps.io/POMA/&#34;&gt;https://polcastellano.shinyapps.io/POMA/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;POMA allows the user to go from the raw data to statistical analysis. The analysis is organized in three blocks: “Load Data” (where user can upload metabolite data and a covariates file), “Pre-processing” (value imputation and normalization) and “Statistical analysis” (univariate and multivariate methods, limma, correlation analysis, feature selection methods, random forest, etc.). These steps include multiple types of interactive data visualization integrated in an intuitive user interface that requires no programming skills. Finally, POMA also generates different automatic statistical and exploratory reports to facilitate the analysis and interpretation of the results.&lt;/p&gt;
@@ -91,9 +145,9 @@
     
     <item>
       <title>Epigenome-wide association study in Childhood Obesity: Searching for early markers of late disease risk</title>
-      <link>/talk/epimet-talk/</link>
+      <link>/talk/epimet2019/</link>
       <pubDate>Wed, 16 Jan 2019 00:00:00 +0100</pubDate>
-      <guid>/talk/epimet-talk/</guid>
+      <guid>/talk/epimet2019/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Rationale&lt;/strong&gt;: Childhood obesity is one a major Public Health
 issue. Overweight/obese children have a high risk of being
 obese as adults and develop other co-morbidities, including type
@@ -128,9 +182,9 @@ close genes.&lt;/p&gt;
     
     <item>
       <title>FBOnto: An ontology to represent food intake data and associate it with metabolomic data</title>
-      <link>/talk/fbonto_bio-talk/</link>
+      <link>/talk/jbg2018/</link>
       <pubDate>Thu, 20 Dec 2018 00:00:00 +0100</pubDate>
-      <guid>/talk/fbonto_bio-talk/</guid>
+      <guid>/talk/jbg2018/</guid>
       <description>&lt;p&gt;Currently, nutrition research generates a lot of complex data hard to analyze and associate with other data or omics such as metabolomics. By itself, metabolomics is closely linked to nutrition. However, it is still difficult to associate these two types of data. One reason for this difficulty is the heterogeneity found in the information provided by participants in nutritional studies about what they have eaten. In order to
 manage this heterogeneity we have decide to build an ontology, describing foods in a
 hierarchichal way that enables a common description of food intake. This ontology
@@ -153,9 +207,9 @@ or a novel concept, food-enrichment analysis.&lt;/p&gt;
     
     <item>
       <title>Lifestyle intervention decreases urine trimethylamine N-oxide levels in prepubertal children with obesity</title>
-      <link>/publication/obesity_carles_2018/</link>
+      <link>/publication/co_obesity_2018/</link>
       <pubDate>Sun, 08 Jul 2018 00:00:00 +0200</pubDate>
-      <guid>/publication/obesity_carles_2018/</guid>
+      <guid>/publication/co_obesity_2018/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Early lifestyle interventions in children with obesity decrease risk of future obesity
 and metabolic disorders. However, the metabolic effects of such interventions are not
 completely characterized.&lt;/p&gt;
@@ -197,9 +251,9 @@ children with obesity.&lt;/p&gt;
     
     <item>
       <title>Epigenome-wide association study in childhood obesity</title>
-      <link>/talk/metnet-talk/</link>
+      <link>/talk/metnet2018/</link>
       <pubDate>Fri, 02 Feb 2018 00:00:00 +0100</pubDate>
-      <guid>/talk/metnet-talk/</guid>
+      <guid>/talk/metnet2018/</guid>
       <description>&lt;p&gt;Childhood obesity is one a major Public Health issue. Overweight/obese children have a
 high risk of being obese as adults and develop other co-morbidities, including type 2
 diabetes, cardiovascular disease and several types of cancer. It has been proposed that
@@ -227,9 +281,9 @@ might mediate disease risk by modulating the expression of physically close gene
     
     <item>
       <title>Epigenome-wide association study in childhood obesity</title>
-      <link>/talk/bioinformatics-talk/</link>
+      <link>/talk/jbg2017/</link>
       <pubDate>Wed, 20 Dec 2017 00:00:00 +0100</pubDate>
-      <guid>/talk/bioinformatics-talk/</guid>
+      <guid>/talk/jbg2017/</guid>
       <description>&lt;p&gt;Childhood obesity is one a major Public Health issue. Overweight/obese children have a
 high risk of being obese as adults and develop other co-morbidities, including type 2
 diabetes, cardiovascular disease and several types of cancer. It has been proposed that
@@ -257,9 +311,9 @@ might mediate disease risk by modulating the expression of physically close gene
     
     <item>
       <title>Epigenome-wide association study in childhood obesity</title>
-      <link>/talk/febs3-talk/</link>
+      <link>/talk/febs2017/</link>
       <pubDate>Mon, 23 Oct 2017 00:00:00 +0200</pubDate>
-      <guid>/talk/febs3-talk/</guid>
+      <guid>/talk/febs2017/</guid>
       <description>&lt;p&gt;Childhood obesity is one a major Public Health issue. Overweight/obese children have a
 high risk of being obese as adults and develop other co-morbidities, including type 2
 diabetes, cardiovascular disease and several types of cancer. It has been proposed that
