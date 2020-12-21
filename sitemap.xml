@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/talk/focis_covid2020/</loc>
-    <lastmod>2020-10-28T00:00:00+01:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2020-12-18T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-10-28T00:00:00+01:00</lastmod>
+    <loc>/talk/eurobioc2020/</loc>
+    <lastmod>2020-12-18T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>/talk/</loc>
+    <lastmod>2020-12-18T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/focis_covid2020/</loc>
     <lastmod>2020-10-28T00:00:00+01:00</lastmod>
   </url>
   
