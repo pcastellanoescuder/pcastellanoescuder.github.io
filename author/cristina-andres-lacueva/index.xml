@@ -5,12 +5,21 @@
     <link>/author/cristina-andres-lacueva/</link>
       <atom:link href="/author/cristina-andres-lacueva/index.xml" rel="self" type="application/rss+xml" />
     <description>Cristina Andrés-Lacueva</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Wed, 22 Apr 2020 00:00:00 +0200</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0200</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Cristina Andrés-Lacueva</title>
       <link>/author/cristina-andres-lacueva/</link>
     </image>
+    
+    <item>
+      <title>POMAShiny: A user-friendly web-based workflow for metabolomics and proteomics data analysis</title>
+      <link>/publication/ploscompbiol_2021/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0200</pubDate>
+      <guid>/publication/ploscompbiol_2021/</guid>
+      <description>&lt;p&gt;Metabolomics and proteomics, like other omics domains, usually face a data mining challenge in providing an understandable output to advance in biomarker discovery and precision medicine. Often, statistical analysis is one of the most difficult challenges and it is critical in the subsequent biological interpretation of the results. Because of this, combined with the computational programming skills needed for this type of analysis, several bioinformatic tools aimed at simplifying metabolomics and proteomics data analysis have emerged. However, sometimes the analysis is still limited to a few hidebound statistical methods and to data sets with limited flexibility. POMAShiny is a web-based tool that provides a structured, flexible and user-friendly workflow for the visualization, exploration and statistical analysis of metabolomics and proteomics data. This tool integrates several statistical methods, some of them widely used in other types of omics, and it is based on the POMA R/Bioconductor package, which increases the reproducibility and flexibility of analyses outside the web environment. POMAShiny and POMA are both freely available at &lt;a href=&#34;https://github.com/nutrimetabolomics/POMAShiny&#34;&gt;https://github.com/nutrimetabolomics/POMAShiny&lt;/a&gt; and &lt;a href=&#34;https://github.com/nutrimetabolomics/POMA,&#34;&gt;https://github.com/nutrimetabolomics/POMA,&lt;/a&gt; respectively.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>FOBI: an ontology to represent food intake data and associate it with metabolomic data</title>

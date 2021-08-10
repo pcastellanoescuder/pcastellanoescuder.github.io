@@ -5,12 +5,29 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Pol Castellano</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Fri, 18 Dec 2020 00:00:00 +0100</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0200</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Pol Castellano</title>
       <link>/</link>
     </image>
+    
+    <item>
+      <title>POMA: A user-friendly workflow for metabolomics and proteomics data analysis</title>
+      <link>/talk/bioc2021/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0200</pubDate>
+      <guid>/talk/bioc2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>POMAShiny: A user-friendly web-based workflow for metabolomics and proteomics data analysis</title>
+      <link>/publication/ploscompbiol_2021/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0200</pubDate>
+      <guid>/publication/ploscompbiol_2021/</guid>
+      <description>&lt;p&gt;Metabolomics and proteomics, like other omics domains, usually face a data mining challenge in providing an understandable output to advance in biomarker discovery and precision medicine. Often, statistical analysis is one of the most difficult challenges and it is critical in the subsequent biological interpretation of the results. Because of this, combined with the computational programming skills needed for this type of analysis, several bioinformatic tools aimed at simplifying metabolomics and proteomics data analysis have emerged. However, sometimes the analysis is still limited to a few hidebound statistical methods and to data sets with limited flexibility. POMAShiny is a web-based tool that provides a structured, flexible and user-friendly workflow for the visualization, exploration and statistical analysis of metabolomics and proteomics data. This tool integrates several statistical methods, some of them widely used in other types of omics, and it is based on the POMA R/Bioconductor package, which increases the reproducibility and flexibility of analyses outside the web environment. POMAShiny and POMA are both freely available at &lt;a href=&#34;https://github.com/nutrimetabolomics/POMAShiny&#34;&gt;https://github.com/nutrimetabolomics/POMAShiny&lt;/a&gt; and &lt;a href=&#34;https://github.com/nutrimetabolomics/POMA,&#34;&gt;https://github.com/nutrimetabolomics/POMA,&lt;/a&gt; respectively.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>POMA: An User-friendly Workflow for Pre-processing and Statistical Analysis of Mass Spectrometry Data</title>
@@ -215,9 +232,9 @@ or a novel concept, food-enrichment analysis.&lt;/p&gt;
     
     <item>
       <title>Lifestyle intervention decreases urine trimethylamine N-oxide levels in prepubertal children with obesity</title>
-      <link>/publication/co_obesity_2018/</link>
+      <link>/publication/obesity_2018/</link>
       <pubDate>Sun, 08 Jul 2018 00:00:00 +0200</pubDate>
-      <guid>/publication/co_obesity_2018/</guid>
+      <guid>/publication/obesity_2018/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Early lifestyle interventions in children with obesity decrease risk of future obesity
 and metabolic disorders. However, the metabolic effects of such interventions are not
 completely characterized.&lt;/p&gt;

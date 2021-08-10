@@ -5,12 +5,20 @@
     <link>/talk/</link>
       <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Fri, 18 Dec 2020 00:00:00 +0100</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0200</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>/talk/</link>
     </image>
+    
+    <item>
+      <title>POMA: A user-friendly workflow for metabolomics and proteomics data analysis</title>
+      <link>/talk/bioc2021/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0200</pubDate>
+      <guid>/talk/bioc2021/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>POMA: An User-friendly Workflow for Pre-processing and Statistical Analysis of Mass Spectrometry Data</title>
