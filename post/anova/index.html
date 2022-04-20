@@ -34,7 +34,7 @@
   
     
   
-  <meta name="description" content="Know the differences!">
+  <meta name="description" content="Concept, types, and repeated measures">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/anova/">
@@ -277,8 +277,8 @@
   
   <meta property="og:site_name" content="Pol Castellano">
   <meta property="og:url" content="/post/anova/">
-  <meta property="og:title" content="ANOVA Type I, II, and III | Pol Castellano">
-  <meta property="og:description" content="Know the differences!"><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:title" content="ANOVA in a nutshell | Pol Castellano">
+  <meta property="og:description" content="Concept, types, and repeated measures"><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
@@ -310,7 +310,7 @@
     "@type": "WebPage",
     "@id": "/post/anova/"
   },
-  "headline": "ANOVA Type I, II, and III",
+  "headline": "ANOVA in a nutshell",
   
   "datePublished": "2022-04-19T00:00:00Z",
   "dateModified": "2022-04-19T00:00:00Z",
@@ -328,7 +328,7 @@
       "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Know the differences!"
+  "description": "Concept, types, and repeated measures"
 }
 </script>
 
@@ -346,7 +346,7 @@
 
 
 
-  <title>ANOVA Type I, II, and III | Pol Castellano</title>
+  <title>ANOVA in a nutshell | Pol Castellano</title>
 
 </head>
 
@@ -762,7 +762,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>ANOVA Type I, II, and III</h1>
+  <h1>ANOVA in a nutshell</h1>
 
   
 
@@ -800,7 +800,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    8 min read
+    9 min read
   </span>
   
 
@@ -836,8 +836,15 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>Yes, there are different types of ANOVA. And yes, they can give different outputs depending on the data.</p>
-<p>ANOVA is a widely used statistical method used to test the effect of one or more factorial variables (independent terms) on a continuous numerical variable (dependent term). This method aims to split the total variation of the dependent variable into one or more sources of variation using the Sum of Squares, and unveiling if independent variables have a significant effect on the dependent variable.</p>
+      <p><img src="img/anova.jpg" width="60%" style="display: block; margin: auto;" /></p>
+<p align="center">Photo by <a href="https://unsplash.com/@szmigieldesign?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lukasz Szmigiel</a> on <a href="https://unsplash.com/s/photos/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>  
+<p>Yes, there are different types of ANOVA. And yes, they can give different outputs depending on the data.</p>
+<p>ANOVA is a widely used statistical method used to test the effect of one or more factorial variables (independent terms) on a continuous numerical variable (dependent term). This method aims to split the total variation of the dependent variable into one or more sources of variation using the Sum of Squares, and unveiling if independent variables have a significant effect on the dependent variable. There are three basic assumptions in ANOVA:</p>
+<ul>
+<li>Independence of samples</li>
+<li>The distribution of the residuals should be normal</li>
+<li>Homocedasticity: homogeneity of the variances</li>
+</ul>
 <p>In case of testing the effect of only one independent variable, we will be using the <strong>One-Way ANOVA</strong>. However, if we want to test two independent variables, we will use the <strong>Two-Way ANOVA</strong>. In the same way, if we want to test the effect of three or more factorial independent variables, we will call it <strong>X-Way ANOVA</strong>.</p>
 <p>For example, we want to assess the effects of diet and exercises on weight loss in 10 sedentary males. Fortunately, the data for this experiment can be found in the <code>datarium</code> R package. Here, our factorial independent variables are <code>diet</code> and <code>exercises</code>, and our dependent numeric variable is the weight loss score measured at the end of each trial (<code>t3</code>). For more info about the dataset see <code>?datarium::weightloss</code>.</p>
 <pre><code class="language-r">library(tidyverse)
@@ -867,6 +874,7 @@ head(weightloss)
 diet         1   0.09   0.091   0.017  0.895
 Residuals   46 239.61   5.209               
 </code></pre>
+<p>Seems that <code>diet</code> alone doesn&rsquo;t have a significant effect on weight loss.</p>
 <ul>
 <li>What is the effect of the <code>exercises</code> on the weight loss score without regard to <code>diet</code>?</li>
 </ul>
@@ -878,6 +886,7 @@ Residuals   46  123.0    2.67
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 </code></pre>
+<p>On the contrary, seems that <code>exercises</code> have a significant effect on weight loss.</p>
 <h1 id="two-way-anova">Two-Way ANOVA</h1>
 <ul>
 <li>Is there a <strong>unique</strong> effect of the <code>diet</code> <strong>or</strong> <code>exercises</code> on the weight loss score (<code>t3</code>)?</li>
@@ -891,6 +900,7 @@ Residuals   45 122.95    2.73
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 </code></pre>
+<p>Given these results, there seems to be an effect of <code>exercises</code> but not <code>diet</code> on weight loss.</p>
 <ul>
 <li>Does the effect of the <code>diet</code> depend on the <code>exercises</code>? Here we need an interaction term (<code>*</code>). Interaction effects represent the combined effects of factors on the dependent variable. When an interaction effect is present, the impact of one factor depends on the level of the other factor.</li>
 </ul>
@@ -904,6 +914,7 @@ Residuals      44  62.22    1.41
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 </code></pre>
+<p>As we can see here, the effect of the interaction is significant (<code>diet:exercises</code>). This means that our two independent variables depend on each other and that the interaction between them has an effect on our dependent variable, i.e., weight loss (<code>t3</code>).</p>
 <p>So far, all of this probably sounds pretty familiar.</p>
 <p>The &ldquo;problem&rdquo; comes when we realize that there are different ways to calculate the Sum of Squares, and therefore to compute these ANOVA models. Often, this is an unknown fact, but not only that, many widely used software for statistical analysis use different types of ANOVA by default (this is even less known), so we need to be careful about which ANOVA model we want to use, what software we are using, etc. Moreover, this can be even more confusing because <strong>if the data is balanced, the different types of ANOVA will give the same result, but they don&rsquo;t in case of unbalanced data</strong>.</p>
 <p>There are three types of ANOVA depending on how the Sum of Squares is done: ANOVA type I, II, and III.</p>
@@ -935,18 +946,18 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 summary(aov(t3 ~ diet + exercises, data = weightloss_unbal))
 </code></pre>
 <pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
-diet         1   0.98    0.98   0.374    0.545    
-exercises    1  85.36   85.36  32.405 1.28e-06 ***
-Residuals   40 105.37    2.63                     
+diet         1   0.19    0.19   0.066    0.798    
+exercises    1  96.78   96.78  33.004 1.08e-06 ***
+Residuals   40 117.29    2.93                     
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 </code></pre>
 <pre><code class="language-r">summary(aov(t3 ~ exercises + diet, data = weightloss_unbal))
 </code></pre>
 <pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
-exercises    1  85.72   85.72  32.541 1.23e-06 ***
-diet         1   0.63    0.63   0.238    0.629    
-Residuals   40 105.37    2.63                     
+exercises    1  96.90   96.90  33.046 1.07e-06 ***
+diet         1   0.07    0.07   0.024    0.878    
+Residuals   40 117.29    2.93                     
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 </code></pre>
@@ -962,9 +973,9 @@ car::Anova(mod, type = &quot;II&quot;)
 
 Response: t3
            Sum Sq Df F value    Pr(&gt;F)    
-diet        0.626  1  0.2377    0.6285    
-exercises  85.364  1 32.4047 1.278e-06 ***
-Residuals 105.372 40                      
+diet        0.070  1  0.0239    0.8778    
+exercises  96.778  1 33.0036 1.079e-06 ***
+Residuals 117.294 40                      
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 </code></pre>
@@ -975,9 +986,9 @@ car::Anova(mod2, type = &quot;II&quot;)
 
 Response: t3
            Sum Sq Df F value    Pr(&gt;F)    
-exercises  85.364  1 32.4047 1.278e-06 ***
-diet        0.626  1  0.2377    0.6285    
-Residuals 105.372 40                      
+exercises  96.778  1 33.0036 1.079e-06 ***
+diet        0.070  1  0.0239    0.8778    
+Residuals 117.294 40                      
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 </code></pre>
@@ -993,11 +1004,11 @@ car::Anova(mod3, type = &quot;III&quot;)
 
 Response: t3
                 Sum Sq Df F value    Pr(&gt;F)    
-(Intercept)    1299.60  1 923.945 &lt; 2.2e-16 ***
-diet             31.70  1  22.536 2.771e-05 ***
-exercises       132.25  1  94.024 6.078e-12 ***
-diet:exercises   50.52  1  35.914 5.299e-07 ***
-Residuals        54.86 39                      
+(Intercept)    1144.24  1 762.384 &lt; 2.2e-16 ***
+diet             32.43  1  21.607 3.773e-05 ***
+exercises       151.57  1 100.987 2.226e-12 ***
+diet:exercises   58.76  1  39.150 2.277e-07 ***
+Residuals        58.53 39                      
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 </code></pre>
@@ -1008,15 +1019,15 @@ car::Anova(mod4, type = &quot;III&quot;)
 
 Response: t3
                 Sum Sq Df F value    Pr(&gt;F)    
-(Intercept)    1299.60  1 923.945 &lt; 2.2e-16 ***
-exercises       132.25  1  94.024 6.078e-12 ***
-diet             31.70  1  22.536 2.771e-05 ***
-exercises:diet   50.52  1  35.914 5.299e-07 ***
-Residuals        54.86 39                      
+(Intercept)    1144.24  1 762.384 &lt; 2.2e-16 ***
+exercises       151.57  1 100.987 2.226e-12 ***
+diet             32.43  1  21.607 3.773e-05 ***
+exercises:diet   58.76  1  39.150 2.277e-07 ***
+Residuals        58.53 39                      
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 </code></pre>
-<p>This type of ANOVA is the default type in the <strong>SAS</strong> and <strong>SPSS</strong> software.</p>
+<p>This type of ANOVA is the default type in the <strong>SAS</strong> and <strong>SPSS</strong> software. Although I mostly use R, this should be the default ANOVA type in my opinion.</p>
 <h1 id="take-home-ideas">Take home ideas</h1>
 <ul>
 <li>If the data is balanced, the type of ANOVA doesn&rsquo;t matter</li>
@@ -1046,7 +1057,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/anova/&amp;text=ANOVA%20Type%20I,%20II,%20and%20III" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/post/anova/&amp;text=ANOVA%20in%20a%20nutshell" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1059,7 +1070,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/anova/&amp;t=ANOVA%20Type%20I,%20II,%20and%20III" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/post/anova/&amp;t=ANOVA%20in%20a%20nutshell" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1072,7 +1083,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
       
       
       <li>
-        <a href="mailto:?subject=ANOVA%20Type%20I,%20II,%20and%20III&amp;body=/post/anova/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=ANOVA%20in%20a%20nutshell&amp;body=/post/anova/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1085,7 +1096,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/anova/&amp;title=ANOVA%20Type%20I,%20II,%20and%20III" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/post/anova/&amp;title=ANOVA%20in%20a%20nutshell" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1098,7 +1109,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
       
       
       <li>
-        <a href="whatsapp://send?text=ANOVA%20Type%20I,%20II,%20and%20III%20/post/anova/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=ANOVA%20in%20a%20nutshell%20/post/anova/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1111,7 +1122,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/post/anova/&amp;title=ANOVA%20Type%20I,%20II,%20and%20III" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/post/anova/&amp;title=ANOVA%20in%20a%20nutshell" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>

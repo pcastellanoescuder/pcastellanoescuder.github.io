@@ -13,12 +13,19 @@
     </image>
     
     <item>
-      <title>ANOVA Type I, II, and III</title>
+      <title>ANOVA in a nutshell</title>
       <link>/post/anova/</link>
       <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
       <guid>/post/anova/</guid>
-      <description>&lt;p&gt;Yes, there are different types of ANOVA. And yes, they can give different outputs depending on the data.&lt;/p&gt;
-&lt;p&gt;ANOVA is a widely used statistical method used to test the effect of one or more factorial variables (independent terms) on a continuous numerical variable (dependent term). This method aims to split the total variation of the dependent variable into one or more sources of variation using the Sum of Squares, and unveiling if independent variables have a significant effect on the dependent variable.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;img/anova.jpg&#34; width=&#34;60%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;Photo by &lt;a href=&#34;https://unsplash.com/@szmigieldesign?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&#34;&gt;Lukasz Szmigiel&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/s/photos/nature?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;  
+&lt;p&gt;Yes, there are different types of ANOVA. And yes, they can give different outputs depending on the data.&lt;/p&gt;
+&lt;p&gt;ANOVA is a widely used statistical method used to test the effect of one or more factorial variables (independent terms) on a continuous numerical variable (dependent term). This method aims to split the total variation of the dependent variable into one or more sources of variation using the Sum of Squares, and unveiling if independent variables have a significant effect on the dependent variable. There are three basic assumptions in ANOVA:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Independence of samples&lt;/li&gt;
+&lt;li&gt;The distribution of the residuals should be normal&lt;/li&gt;
+&lt;li&gt;Homocedasticity: homogeneity of the variances&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;In case of testing the effect of only one independent variable, we will be using the &lt;strong&gt;One-Way ANOVA&lt;/strong&gt;. However, if we want to test two independent variables, we will use the &lt;strong&gt;Two-Way ANOVA&lt;/strong&gt;. In the same way, if we want to test the effect of three or more factorial independent variables, we will call it &lt;strong&gt;X-Way ANOVA&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;For example, we want to assess the effects of diet and exercises on weight loss in 10 sedentary males. Fortunately, the data for this experiment can be found in the &lt;code&gt;datarium&lt;/code&gt; R package. Here, our factorial independent variables are &lt;code&gt;diet&lt;/code&gt; and &lt;code&gt;exercises&lt;/code&gt;, and our dependent numeric variable is the weight loss score measured at the end of each trial (&lt;code&gt;t3&lt;/code&gt;). For more info about the dataset see &lt;code&gt;?datarium::weightloss&lt;/code&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(tidyverse)
@@ -48,6 +55,7 @@ head(weightloss)
 diet         1   0.09   0.091   0.017  0.895
 Residuals   46 239.61   5.209               
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Seems that &lt;code&gt;diet&lt;/code&gt; alone doesn&amp;rsquo;t have a significant effect on weight loss.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;What is the effect of the &lt;code&gt;exercises&lt;/code&gt; on the weight loss score without regard to &lt;code&gt;diet&lt;/code&gt;?&lt;/li&gt;
 &lt;/ul&gt;
@@ -59,6 +67,7 @@ Residuals   46  123.0    2.67
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On the contrary, seems that &lt;code&gt;exercises&lt;/code&gt; have a significant effect on weight loss.&lt;/p&gt;
 &lt;h1 id=&#34;two-way-anova&#34;&gt;Two-Way ANOVA&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Is there a &lt;strong&gt;unique&lt;/strong&gt; effect of the &lt;code&gt;diet&lt;/code&gt; &lt;strong&gt;or&lt;/strong&gt; &lt;code&gt;exercises&lt;/code&gt; on the weight loss score (&lt;code&gt;t3&lt;/code&gt;)?&lt;/li&gt;
@@ -72,6 +81,7 @@ Residuals   45 122.95    2.73
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Given these results, there seems to be an effect of &lt;code&gt;exercises&lt;/code&gt; but not &lt;code&gt;diet&lt;/code&gt; on weight loss.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Does the effect of the &lt;code&gt;diet&lt;/code&gt; depend on the &lt;code&gt;exercises&lt;/code&gt;? Here we need an interaction term (&lt;code&gt;*&lt;/code&gt;). Interaction effects represent the combined effects of factors on the dependent variable. When an interaction effect is present, the impact of one factor depends on the level of the other factor.&lt;/li&gt;
 &lt;/ul&gt;
@@ -85,6 +95,7 @@ Residuals      44  62.22    1.41
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As we can see here, the effect of the interaction is significant (&lt;code&gt;diet:exercises&lt;/code&gt;). This means that our two independent variables depend on each other and that the interaction between them has an effect on our dependent variable, i.e., weight loss (&lt;code&gt;t3&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;So far, all of this probably sounds pretty familiar.&lt;/p&gt;
 &lt;p&gt;The &amp;ldquo;problem&amp;rdquo; comes when we realize that there are different ways to calculate the Sum of Squares, and therefore to compute these ANOVA models. Often, this is an unknown fact, but not only that, many widely used software for statistical analysis use different types of ANOVA by default (this is even less known), so we need to be careful about which ANOVA model we want to use, what software we are using, etc. Moreover, this can be even more confusing because &lt;strong&gt;if the data is balanced, the different types of ANOVA will give the same result, but they don&amp;rsquo;t in case of unbalanced data&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;There are three types of ANOVA depending on how the Sum of Squares is done: ANOVA type I, II, and III.&lt;/p&gt;
@@ -116,18 +127,18 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
 summary(aov(t3 ~ diet + exercises, data = weightloss_unbal))
 &lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value   Pr(&amp;gt;F)    
-diet         1   0.98    0.98   0.374    0.545    
-exercises    1  85.36   85.36  32.405 1.28e-06 ***
-Residuals   40 105.37    2.63                     
+diet         1   0.19    0.19   0.066    0.798    
+exercises    1  96.78   96.78  33.004 1.08e-06 ***
+Residuals   40 117.29    2.93                     
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;summary(aov(t3 ~ exercises + diet, data = weightloss_unbal))
 &lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value   Pr(&amp;gt;F)    
-exercises    1  85.72   85.72  32.541 1.23e-06 ***
-diet         1   0.63    0.63   0.238    0.629    
-Residuals   40 105.37    2.63                     
+exercises    1  96.90   96.90  33.046 1.07e-06 ***
+diet         1   0.07    0.07   0.024    0.878    
+Residuals   40 117.29    2.93                     
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
@@ -143,9 +154,9 @@ car::Anova(mod, type = &amp;quot;II&amp;quot;)
 
 Response: t3
            Sum Sq Df F value    Pr(&amp;gt;F)    
-diet        0.626  1  0.2377    0.6285    
-exercises  85.364  1 32.4047 1.278e-06 ***
-Residuals 105.372 40                      
+diet        0.070  1  0.0239    0.8778    
+exercises  96.778  1 33.0036 1.079e-06 ***
+Residuals 117.294 40                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
@@ -156,9 +167,9 @@ car::Anova(mod2, type = &amp;quot;II&amp;quot;)
 
 Response: t3
            Sum Sq Df F value    Pr(&amp;gt;F)    
-exercises  85.364  1 32.4047 1.278e-06 ***
-diet        0.626  1  0.2377    0.6285    
-Residuals 105.372 40                      
+exercises  96.778  1 33.0036 1.079e-06 ***
+diet        0.070  1  0.0239    0.8778    
+Residuals 117.294 40                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
@@ -174,11 +185,11 @@ car::Anova(mod3, type = &amp;quot;III&amp;quot;)
 
 Response: t3
                 Sum Sq Df F value    Pr(&amp;gt;F)    
-(Intercept)    1299.60  1 923.945 &amp;lt; 2.2e-16 ***
-diet             31.70  1  22.536 2.771e-05 ***
-exercises       132.25  1  94.024 6.078e-12 ***
-diet:exercises   50.52  1  35.914 5.299e-07 ***
-Residuals        54.86 39                      
+(Intercept)    1144.24  1 762.384 &amp;lt; 2.2e-16 ***
+diet             32.43  1  21.607 3.773e-05 ***
+exercises       151.57  1 100.987 2.226e-12 ***
+diet:exercises   58.76  1  39.150 2.277e-07 ***
+Residuals        58.53 39                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
@@ -189,15 +200,15 @@ car::Anova(mod4, type = &amp;quot;III&amp;quot;)
 
 Response: t3
                 Sum Sq Df F value    Pr(&amp;gt;F)    
-(Intercept)    1299.60  1 923.945 &amp;lt; 2.2e-16 ***
-exercises       132.25  1  94.024 6.078e-12 ***
-diet             31.70  1  22.536 2.771e-05 ***
-exercises:diet   50.52  1  35.914 5.299e-07 ***
-Residuals        54.86 39                      
+(Intercept)    1144.24  1 762.384 &amp;lt; 2.2e-16 ***
+exercises       151.57  1 100.987 2.226e-12 ***
+diet             32.43  1  21.607 3.773e-05 ***
+exercises:diet   58.76  1  39.150 2.277e-07 ***
+Residuals        58.53 39                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This type of ANOVA is the default type in the &lt;strong&gt;SAS&lt;/strong&gt; and &lt;strong&gt;SPSS&lt;/strong&gt; software.&lt;/p&gt;
+&lt;p&gt;This type of ANOVA is the default type in the &lt;strong&gt;SAS&lt;/strong&gt; and &lt;strong&gt;SPSS&lt;/strong&gt; software. Although I mostly use R, this should be the default ANOVA type in my opinion.&lt;/p&gt;
 &lt;h1 id=&#34;take-home-ideas&#34;&gt;Take home ideas&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;If the data is balanced, the type of ANOVA doesn&amp;rsquo;t matter&lt;/li&gt;
