@@ -5,12 +5,24 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Wed, 26 Jun 2019 10:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Tue, 19 Apr 2022 10:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>ANOVA Type I, II, and III</title>
+      <link>/post/anova/</link>
+      <pubDate>Tue, 19 Apr 2022 10:00:00 +0000</pubDate>
+      <guid>/post/anova/</guid>
+      <description>&lt;p&gt;When do you conduct an ANOVA? You conduct an ANOVA when you are testing the effect of one or more nominal (aka factor) independent variable(s) on a numerical dependent variable. A nominal (factor) variable is one that contains a finite number of categories with no inherent order. Gender, profession, experimental conditions, and Justin Bieber albums are good examples of factors (not necessarily of good music). If you only include one independent variable, this is called a One-way ANOVA. If you include two independent variables, this is called a Two-way ANOVA. If you include three independent variables it is called a Menage a trois `NOVA.&lt;/p&gt;
+&lt;p&gt;Ok maybe it’s not yet, but we repeat it enough it will be and we can change the world.&lt;/p&gt;
+&lt;p&gt;For example, let’s say you want to test how well each of three different cleaning fluids are at getting poop off of your poop deck.To test this, you could do the following: over the course of 300 cleaning days, you clean different areas of the deck with the three different cleaners. You then record how long it takes for each cleaner to clean its portion of the deck. At the same time, you could also measure how well the cleaner is cleaning two different types of poop that typically show up on your deck: shark and parrot. Here, your independent variables cleaner and type are factors, and your dependent variable time is numeric.&lt;/p&gt;
+&lt;p&gt;Thankfully, this experiment has already been conducted. The data are recorded in a dataframe called poopdeck in the yarrr package. Here’s how the first few rows of the data look:&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Blogdown: Make your own website easily with R!</title>
