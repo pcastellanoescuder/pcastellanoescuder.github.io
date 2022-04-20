@@ -5,7 +5,7 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Tue, 19 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
@@ -13,11 +13,11 @@
     </image>
     
     <item>
-      <title>ANOVA in a nutshell</title>
+      <title>ANOVA types in a nutshell</title>
       <link>/post/anova/</link>
-      <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
       <guid>/post/anova/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;img/anova.jpg&#34; width=&#34;60%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/img/anova.jpg&#34; width=&#34;60%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p align=&#34;center&#34;&gt;Photo by &lt;a href=&#34;https://unsplash.com/@szmigieldesign?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&#34;&gt;Lukasz Szmigiel&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/s/photos/nature?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;  
 &lt;p&gt;Yes, there are different types of ANOVA. And yes, they can give different outputs depending on the data.&lt;/p&gt;
 &lt;p&gt;ANOVA is a widely used statistical method used to test the effect of one or more factorial variables (independent terms) on a continuous numerical variable (dependent term). This method aims to split the total variation of the dependent variable into one or more sources of variation using the Sum of Squares, and unveiling if independent variables have a significant effect on the dependent variable. There are three basic assumptions in ANOVA:&lt;/p&gt;
@@ -127,18 +127,18 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
 summary(aov(t3 ~ diet + exercises, data = weightloss_unbal))
 &lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value   Pr(&amp;gt;F)    
-diet         1   0.19    0.19   0.066    0.798    
-exercises    1  96.78   96.78  33.004 1.08e-06 ***
-Residuals   40 117.29    2.93                     
+diet         1    0.0    0.00    0.00    0.996    
+exercises    1  115.5  115.55   40.28 1.54e-07 ***
+Residuals   40  114.8    2.87                     
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;summary(aov(t3 ~ exercises + diet, data = weightloss_unbal))
 &lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value   Pr(&amp;gt;F)    
-exercises    1  96.90   96.90  33.046 1.07e-06 ***
-diet         1   0.07    0.07   0.024    0.878    
-Residuals   40 117.29    2.93                     
+exercises    1 114.95  114.95  40.068 1.62e-07 ***
+diet         1   0.61    0.61   0.211    0.648    
+Residuals   40 114.75    2.87                     
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
@@ -154,9 +154,9 @@ car::Anova(mod, type = &amp;quot;II&amp;quot;)
 
 Response: t3
            Sum Sq Df F value    Pr(&amp;gt;F)    
-diet        0.070  1  0.0239    0.8778    
-exercises  96.778  1 33.0036 1.079e-06 ***
-Residuals 117.294 40                      
+diet        0.606  1  0.2111    0.6484    
+exercises 115.552  1 40.2793 1.539e-07 ***
+Residuals 114.751 40                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
@@ -167,9 +167,9 @@ car::Anova(mod2, type = &amp;quot;II&amp;quot;)
 
 Response: t3
            Sum Sq Df F value    Pr(&amp;gt;F)    
-exercises  96.778  1 33.0036 1.079e-06 ***
-diet        0.070  1  0.0239    0.8778    
-Residuals 117.294 40                      
+exercises 115.552  1 40.2793 1.539e-07 ***
+diet        0.606  1  0.2111    0.6484    
+Residuals 114.751 40                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
@@ -185,11 +185,11 @@ car::Anova(mod3, type = &amp;quot;III&amp;quot;)
 
 Response: t3
                 Sum Sq Df F value    Pr(&amp;gt;F)    
-(Intercept)    1144.24  1 762.384 &amp;lt; 2.2e-16 ***
-diet             32.43  1  21.607 3.773e-05 ***
-exercises       151.57  1 100.987 2.226e-12 ***
-diet:exercises   58.76  1  39.150 2.277e-07 ***
-Residuals        58.53 39                      
+(Intercept)    1438.92  1 943.090 &amp;lt; 2.2e-16 ***
+diet             31.68  1  20.762 5.018e-05 ***
+exercises       166.27  1 108.972 7.474e-13 ***
+diet:exercises   55.25  1  36.209 4.898e-07 ***
+Residuals        59.50 39                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
@@ -200,11 +200,11 @@ car::Anova(mod4, type = &amp;quot;III&amp;quot;)
 
 Response: t3
                 Sum Sq Df F value    Pr(&amp;gt;F)    
-(Intercept)    1144.24  1 762.384 &amp;lt; 2.2e-16 ***
-exercises       151.57  1 100.987 2.226e-12 ***
-diet             32.43  1  21.607 3.773e-05 ***
-exercises:diet   58.76  1  39.150 2.277e-07 ***
-Residuals        58.53 39                      
+(Intercept)    1438.92  1 943.090 &amp;lt; 2.2e-16 ***
+exercises       166.27  1 108.972 7.474e-13 ***
+diet             31.68  1  20.762 5.018e-05 ***
+exercises:diet   55.25  1  36.209 4.898e-07 ***
+Residuals        59.50 39                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
