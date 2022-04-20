@@ -369,12 +369,10 @@ pre code {
 </div>
 
 
-<p align="center">
-Photo by
-<a href="https://unsplash.com/@szmigieldesign?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Lukasz
-Szmigiel</a> on
-<a href="https://unsplash.com/s/photos/nature?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
-</p>
+<!-- <figure> -->
+<!-- <img src="/img/anova.jpg" width="80%" style="display: block; margin: auto;" /> -->
+<!-- <figcaption align="center">Photo by <a href="https://unsplash.com/@szmigieldesign?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lukasz Szmigiel</a> on <a href="https://unsplash.com/s/photos/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>   -->
+<!-- </figure>  -->
 <p>Yes, there are different types of ANOVA. And yes, they can give
 different outputs depending on the data.</p>
 <p>ANOVA is a widely used statistical method used to test the effect of
@@ -525,16 +523,16 @@ random samples and repeat the process…</p>
   
 summary(aov(t3 ~ diet + exercises, data = weightloss_unbal))</code></pre>
 <pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
-diet         1    0.0    0.00    0.00    0.996    
-exercises    1  115.5  115.55   40.28 1.54e-07 ***
-Residuals   40  114.8    2.87                     
+diet         1    0.0    0.00    0.00    0.987    
+exercises    1  101.3  101.33   35.57 5.31e-07 ***
+Residuals   40  113.9    2.85                     
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <pre class="r"><code>summary(aov(t3 ~ exercises + diet, data = weightloss_unbal))</code></pre>
 <pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
-exercises    1 114.95  114.95  40.068 1.62e-07 ***
-diet         1   0.61    0.61   0.211    0.648    
-Residuals   40 114.75    2.87                     
+exercises    1 101.26  101.26  35.547 5.34e-07 ***
+diet         1   0.07    0.07   0.025    0.875    
+Residuals   40 113.94    2.85                     
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Now, we can appreciate differences in the results when we flip the
@@ -569,9 +567,9 @@ car::Anova(mod, type = &quot;II&quot;)</code></pre>
 
 Response: t3
            Sum Sq Df F value    Pr(&gt;F)    
-diet        0.606  1  0.2111    0.6484    
-exercises 115.552  1 40.2793 1.539e-07 ***
-Residuals 114.751 40                      
+diet        0.072  1  0.0252    0.8745    
+exercises 101.327  1 35.5723 5.306e-07 ***
+Residuals 113.939 40                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <pre class="r"><code>mod2 &lt;- lm(t3 ~ exercises + diet, data = weightloss_unbal)
@@ -580,9 +578,9 @@ car::Anova(mod2, type = &quot;II&quot;)</code></pre>
 
 Response: t3
            Sum Sq Df F value    Pr(&gt;F)    
-exercises 115.552  1 40.2793 1.539e-07 ***
-diet        0.606  1  0.2111    0.6484    
-Residuals 114.751 40                      
+exercises 101.327  1 35.5723 5.306e-07 ***
+diet        0.072  1  0.0252    0.8745    
+Residuals 113.939 40                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>This type of ANOVA is the default type in <strong>Python</strong>
@@ -605,11 +603,11 @@ car::Anova(mod3, type = &quot;III&quot;)</code></pre>
 
 Response: t3
                 Sum Sq Df F value    Pr(&gt;F)    
-(Intercept)    1438.92  1 943.090 &lt; 2.2e-16 ***
-diet             31.68  1  20.762 5.018e-05 ***
-exercises       166.27  1 108.972 7.474e-13 ***
-diet:exercises   55.25  1  36.209 4.898e-07 ***
-Residuals        59.50 39                      
+(Intercept)    1288.91  1 868.648 &lt; 2.2e-16 ***
+diet             30.76  1  20.732 5.071e-05 ***
+exercises       153.50  1 103.450 1.580e-12 ***
+diet:exercises   56.07  1  37.788 3.234e-07 ***
+Residuals        57.87 39                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <pre class="r"><code>mod4 &lt;- lm(t3 ~ exercises * diet, data = weightloss_unbal)
@@ -618,11 +616,11 @@ car::Anova(mod4, type = &quot;III&quot;)</code></pre>
 
 Response: t3
                 Sum Sq Df F value    Pr(&gt;F)    
-(Intercept)    1438.92  1 943.090 &lt; 2.2e-16 ***
-exercises       166.27  1 108.972 7.474e-13 ***
-diet             31.68  1  20.762 5.018e-05 ***
-exercises:diet   55.25  1  36.209 4.898e-07 ***
-Residuals        59.50 39                      
+(Intercept)    1288.91  1 868.648 &lt; 2.2e-16 ***
+exercises       153.50  1 103.450 1.580e-12 ***
+diet             30.76  1  20.732 5.071e-05 ***
+exercises:diet   56.07  1  37.788 3.234e-07 ***
+Residuals        57.87 39                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>This type of ANOVA is the default type in the <strong>SAS</strong>

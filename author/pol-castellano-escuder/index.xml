@@ -17,8 +17,10 @@
       <link>/post/anova/</link>
       <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
       <guid>/post/anova/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/img/anova.jpg&#34; width=&#34;60%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;Photo by &lt;a href=&#34;https://unsplash.com/@szmigieldesign?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&#34;&gt;Lukasz Szmigiel&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/s/photos/nature?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;  
+      <description>&lt;figure&gt;
+&lt;img src=&#34;/img/anova.jpg&#34; width=&#34;80%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;
+&lt;figcaption align=&#34;center&#34;&gt;Photo by &lt;a href=&#34;https://unsplash.com/@szmigieldesign?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&#34;&gt;Lukasz Szmigiel&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/s/photos/nature?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/figcaption&gt;  
+&lt;/figure&gt;
 &lt;p&gt;Yes, there are different types of ANOVA. And yes, they can give different outputs depending on the data.&lt;/p&gt;
 &lt;p&gt;ANOVA is a widely used statistical method used to test the effect of one or more factorial variables (independent terms) on a continuous numerical variable (dependent term). This method aims to split the total variation of the dependent variable into one or more sources of variation using the Sum of Squares, and unveiling if independent variables have a significant effect on the dependent variable. There are three basic assumptions in ANOVA:&lt;/p&gt;
 &lt;ul&gt;
@@ -127,18 +129,18 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
 summary(aov(t3 ~ diet + exercises, data = weightloss_unbal))
 &lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value   Pr(&amp;gt;F)    
-diet         1    0.0    0.00    0.00    0.996    
-exercises    1  115.5  115.55   40.28 1.54e-07 ***
-Residuals   40  114.8    2.87                     
+diet         1    0.0    0.00    0.00    0.987    
+exercises    1  101.3  101.33   35.57 5.31e-07 ***
+Residuals   40  113.9    2.85                     
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;summary(aov(t3 ~ exercises + diet, data = weightloss_unbal))
 &lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value   Pr(&amp;gt;F)    
-exercises    1 114.95  114.95  40.068 1.62e-07 ***
-diet         1   0.61    0.61   0.211    0.648    
-Residuals   40 114.75    2.87                     
+exercises    1 101.26  101.26  35.547 5.34e-07 ***
+diet         1   0.07    0.07   0.025    0.875    
+Residuals   40 113.94    2.85                     
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
@@ -154,9 +156,9 @@ car::Anova(mod, type = &amp;quot;II&amp;quot;)
 
 Response: t3
            Sum Sq Df F value    Pr(&amp;gt;F)    
-diet        0.606  1  0.2111    0.6484    
-exercises 115.552  1 40.2793 1.539e-07 ***
-Residuals 114.751 40                      
+diet        0.072  1  0.0252    0.8745    
+exercises 101.327  1 35.5723 5.306e-07 ***
+Residuals 113.939 40                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
@@ -167,9 +169,9 @@ car::Anova(mod2, type = &amp;quot;II&amp;quot;)
 
 Response: t3
            Sum Sq Df F value    Pr(&amp;gt;F)    
-exercises 115.552  1 40.2793 1.539e-07 ***
-diet        0.606  1  0.2111    0.6484    
-Residuals 114.751 40                      
+exercises 101.327  1 35.5723 5.306e-07 ***
+diet        0.072  1  0.0252    0.8745    
+Residuals 113.939 40                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
@@ -185,11 +187,11 @@ car::Anova(mod3, type = &amp;quot;III&amp;quot;)
 
 Response: t3
                 Sum Sq Df F value    Pr(&amp;gt;F)    
-(Intercept)    1438.92  1 943.090 &amp;lt; 2.2e-16 ***
-diet             31.68  1  20.762 5.018e-05 ***
-exercises       166.27  1 108.972 7.474e-13 ***
-diet:exercises   55.25  1  36.209 4.898e-07 ***
-Residuals        59.50 39                      
+(Intercept)    1288.91  1 868.648 &amp;lt; 2.2e-16 ***
+diet             30.76  1  20.732 5.071e-05 ***
+exercises       153.50  1 103.450 1.580e-12 ***
+diet:exercises   56.07  1  37.788 3.234e-07 ***
+Residuals        57.87 39                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
@@ -200,11 +202,11 @@ car::Anova(mod4, type = &amp;quot;III&amp;quot;)
 
 Response: t3
                 Sum Sq Df F value    Pr(&amp;gt;F)    
-(Intercept)    1438.92  1 943.090 &amp;lt; 2.2e-16 ***
-exercises       166.27  1 108.972 7.474e-13 ***
-diet             31.68  1  20.762 5.018e-05 ***
-exercises:diet   55.25  1  36.209 4.898e-07 ***
-Residuals        59.50 39                      
+(Intercept)    1288.91  1 868.648 &amp;lt; 2.2e-16 ***
+exercises       153.50  1 103.450 1.580e-12 ***
+diet             30.76  1  20.732 5.071e-05 ***
+exercises:diet   56.07  1  37.788 3.234e-07 ***
+Residuals        57.87 39                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 &lt;/code&gt;&lt;/pre&gt;
