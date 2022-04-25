@@ -223,14 +223,6 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
     </item>
     
     <item>
-      <title>POMA: A user-friendly workflow for metabolomics and proteomics data analysis</title>
-      <link>/talk/bioc2021/</link>
-      <pubDate>Fri, 06 Aug 2021 00:00:00 -0400</pubDate>
-      <guid>/talk/bioc2021/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>POMAShiny: A user-friendly web-based workflow for metabolomics and proteomics data analysis</title>
       <link>/publication/ploscompbiol_2021/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 -0400</pubDate>
@@ -244,14 +236,6 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
       <link>/talk/eurobioc2020/</link>
       <pubDate>Fri, 18 Dec 2020 00:00:00 -0500</pubDate>
       <guid>/talk/eurobioc2020/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Immunological Risk Profile in COVID-19, the Experience of a Single Academic Hospital in Spain</title>
-      <link>/talk/focis_covid2020/</link>
-      <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
-      <guid>/talk/focis_covid2020/</guid>
       <description></description>
     </item>
     
@@ -279,34 +263,6 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
       <pubDate>Wed, 23 Sep 2020 00:00:00 -0400</pubDate>
       <guid>/talk/ifow2020/</guid>
       <description>&lt;p&gt;Nutrition research can be conducted by using two complementary approaches: (i) traditional self-reporting methods or (ii) via metabolomics techniques to analyze food intake biomarkers in biofluids. However, the complexity and heterogeneity of these two very different types of data often hinder their analysis and integration. To manage this challenge, we have developed a novel ontology that describes food and their associated metabolite entities in a hierarchical way. This ontology uses a formal naming system, category definitions, properties and relations between both types of data. The ontology presented is called FOBI (Food-Biomarker Ontology) and it is composed of two interconnected sub-ontologies. One is a ’Food Ontology’ consisting of raw foods and ‘multi-component foods’ while the second is a ‘Biomarker Ontology’ containing food intake biomarkers classified by their chemical classes. These two sub-ontologies are conceptually independent but interconnected by different properties. This allows data and information regarding foods and food biomarkers to be visualized in a bidirectional way, going from metabolomics to nutritional data or vice versa. Potential applications of this ontology include the annotation of foods and biomarkers using a well-defined and consistent nomenclature, the standardized reporting of metabolomics workflows (e.g. metabolite identification, experimental design) or the application of different enrich- ment analysis approaches to analyze nutrimetabolomic data. Availability: FOBI is freely available in both OWL (Web Ontology Language) and OBO (Open Biomedical Ontolo- gies) formats at the project’s Github repository (&lt;a href=&#34;https://github.com/pcastellanoescuder/FoodBiomarkerOntology&#34;&gt;https://github.com/pcastellanoescuder/FoodBiomarkerOntology&lt;/a&gt;) and FOBI visualization tool is available in &lt;a href=&#34;https://polcastellano.shinyapps.io/FOBI_Visualization_Tool/&#34;&gt;https://polcastellano.shinyapps.io/FOBI_Visualization_Tool/&lt;/a&gt; .&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Perfil inmunológico de riesgo en COVID-19</title>
-      <link>/talk/sei_covid2020/</link>
-      <pubDate>Sun, 13 Sep 2020 00:00:00 -0400</pubDate>
-      <guid>/talk/sei_covid2020/</guid>
-      <description>&lt;p&gt;En COVID-19 el pronóstico vital viene determinado, entre otros factores, por el grado hiperinflamación
-inducido por la infección por SARS-CoV-2. Disponer de buenos marcadores iniciales para pronosticar el desarrollo
-de esta hiperinflamación puede resultar de gran utilidad para el cribado y el inicio de tratamiento con
-inmunoduladores. Para identificar el valor pronostico de los distintos marcadores de laboratorio en uso hemos
-analizado datos demográficos y 32 parámetros de laboratorio en relación con el resultado final 1292 enfermos
-mayores de 18 años (716 V y 576 M) no tratados que acudieron a urgencias entre el 11/03 y 26/05 2020. Se
-confirmó que la edad es el factor que más influye en el pronóstico, alta a domicilio, edad media 54,114,8 frente a
-fallecimiento 74,3 10,8 con una p corregida &amp;lt;0,001 por lo que en los modelos predictivos se mantuvo la edad.&lt;/p&gt;
-&lt;p&gt;Los datos se han analizado mediante la aplicación web Covid Explorer basada en R y Shiny desarrollada por los
-autores &lt;a href=&#34;http://uebshiny.vhir.org:3838/shiny_covid19/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://uebshiny.vhir.org:3838/shiny_covid19/&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;El grado de asociación de los marcadores de laboratorio analizados mediante t-test sigue la siguiente jerarquía.
-IL-6 (log) &amp;gt; Proteína C reactiva (log) &amp;gt; linfocitos (%) &amp;gt; urea &amp;gt; neutrófilos (%) &amp;gt; D-Dímero (log) &amp;gt; linfocitos (n) &amp;gt; ratio
-neutrófilo/linfocito (NLR) &amp;gt; Hb &amp;gt; neutrófilos (n) &amp;gt; ferritina (log) &amp;gt; tpo protrombina INR. La primera componente del
-análisis de componentes principales explica el 24,8% de la variabilidad total de los datos y sugiere que las variables
-que más peso tienen en el resultado “alta a domicilio” son la cifra total de linfocitos y en el de “fallecimiento”, el
-número total de neutrófilos, la IL-6, la proteína C reactiva.&lt;/p&gt;
-&lt;p&gt;La aplicación del modelo predictivo lasso dio para las variables, antes enumerados más fibrinógeno, una precisión
-por encima de 0.85. Estos datos validan estudios previos en grupos menores y demuestran la posibilidad de
-generar modelos predictivos bastante precisos en el momento inicial, para lo cual convendría, probablemente,
-incluir más datos que miden el estado hiperinflamatorio inicial de estos enfermos.&lt;/p&gt;
 </description>
     </item>
     
@@ -368,14 +324,6 @@ incluir más datos que miden el estado hiperinflamatorio inicial de estos enferm
 &lt;p&gt;POMA is a free, friendly and fast Shiny interface for analysing and visualization data after an analytical targeted metabolomics process and its hosted on &lt;a href=&#34;https://polcastellano.shinyapps.io/POMA/&#34;&gt;https://polcastellano.shinyapps.io/POMA/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;POMA allows the user to go from the raw data to statistical analysis. The analysis is organized in three blocks: “Load Data” (where user can upload metabolite data and a covariates file), “Pre-processing” (value imputation and normalization) and “Statistical analysis” (univariate and multivariate methods, limma, correlation analysis, feature selection methods, random forest, etc.). These steps include multiple types of interactive data visualization integrated in an intuitive user interface that requires no programming skills. Finally, POMA also generates different automatic statistical and exploratory reports to facilitate the analysis and interpretation of the results.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>POMA</title>
-      <link>/project/poma/</link>
-      <pubDate>Mon, 21 Jan 2019 00:00:00 -0500</pubDate>
-      <guid>/project/poma/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -554,14 +502,6 @@ methylation (109 CpG sites). In our dataset, only 2 CpG sites appeared to play a
 causative role in the development of the disease. We hypothesize that these CpG sites
 might mediate disease risk by modulating the expression of physically close genes.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>FOBI</title>
-      <link>/project/fobi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project/fobi/</guid>
-      <description></description>
     </item>
     
   </channel>
