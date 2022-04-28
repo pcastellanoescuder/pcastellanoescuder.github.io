@@ -523,16 +523,16 @@ random samples and repeat the process…</p>
   
 summary(aov(t3 ~ diet + exercises, data = weightloss_unbal))</code></pre>
 <pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
-diet         1    0.0    0.00    0.00    0.987    
-exercises    1  101.3  101.33   35.57 5.31e-07 ***
-Residuals   40  113.9    2.85                     
+diet         1   0.17    0.17   0.058    0.811    
+exercises    1  90.92   90.92  31.875 1.49e-06 ***
+Residuals   40 114.09    2.85                     
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <pre class="r"><code>summary(aov(t3 ~ exercises + diet, data = weightloss_unbal))</code></pre>
 <pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
-exercises    1 101.26  101.26  35.547 5.34e-07 ***
-diet         1   0.07    0.07   0.025    0.875    
-Residuals   40 113.94    2.85                     
+exercises    1  90.68   90.68  31.792 1.52e-06 ***
+diet         1   0.40    0.40   0.141    0.709    
+Residuals   40 114.09    2.85                     
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Now, we can appreciate differences in the results when we flip the
@@ -567,9 +567,9 @@ car::Anova(mod, type = &quot;II&quot;)</code></pre>
 
 Response: t3
            Sum Sq Df F value    Pr(&gt;F)    
-diet        0.072  1  0.0252    0.8745    
-exercises 101.327  1 35.5723 5.306e-07 ***
-Residuals 113.939 40                      
+diet        0.402  1  0.1408    0.7094    
+exercises  90.917  1 31.8752 1.487e-06 ***
+Residuals 114.092 40                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <pre class="r"><code>mod2 &lt;- lm(t3 ~ exercises + diet, data = weightloss_unbal)
@@ -578,9 +578,9 @@ car::Anova(mod2, type = &quot;II&quot;)</code></pre>
 
 Response: t3
            Sum Sq Df F value    Pr(&gt;F)    
-exercises 101.327  1 35.5723 5.306e-07 ***
-diet        0.072  1  0.0252    0.8745    
-Residuals 113.939 40                      
+exercises  90.917  1 31.8752 1.487e-06 ***
+diet        0.402  1  0.1408    0.7094    
+Residuals 114.092 40                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>This type of ANOVA is the default type in <strong>Python</strong>
@@ -602,12 +602,12 @@ car::Anova(mod3, type = &quot;III&quot;)</code></pre>
 <pre><code>Anova Table (Type III tests)
 
 Response: t3
-                Sum Sq Df F value    Pr(&gt;F)    
-(Intercept)    1288.91  1 868.648 &lt; 2.2e-16 ***
-diet             30.76  1  20.732 5.071e-05 ***
-exercises       153.50  1 103.450 1.580e-12 ***
-diet:exercises   56.07  1  37.788 3.234e-07 ***
-Residuals        57.87 39                      
+                Sum Sq Df  F value    Pr(&gt;F)    
+(Intercept)    1289.13  1 1004.673 &lt; 2.2e-16 ***
+diet             38.07  1   29.672 3.030e-06 ***
+exercises       153.44  1  119.584 1.915e-13 ***
+diet:exercises   64.05  1   49.916 1.745e-08 ***
+Residuals        50.04 39                       
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <pre class="r"><code>mod4 &lt;- lm(t3 ~ exercises * diet, data = weightloss_unbal)
@@ -615,12 +615,12 @@ car::Anova(mod4, type = &quot;III&quot;)</code></pre>
 <pre><code>Anova Table (Type III tests)
 
 Response: t3
-                Sum Sq Df F value    Pr(&gt;F)    
-(Intercept)    1288.91  1 868.648 &lt; 2.2e-16 ***
-exercises       153.50  1 103.450 1.580e-12 ***
-diet             30.76  1  20.732 5.071e-05 ***
-exercises:diet   56.07  1  37.788 3.234e-07 ***
-Residuals        57.87 39                      
+                Sum Sq Df  F value    Pr(&gt;F)    
+(Intercept)    1289.13  1 1004.673 &lt; 2.2e-16 ***
+exercises       153.44  1  119.584 1.915e-13 ***
+diet             38.07  1   29.672 3.030e-06 ***
+exercises:diet   64.05  1   49.916 1.745e-08 ***
+Residuals        50.04 39                       
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>This type of ANOVA is the default type in the <strong>SAS</strong>

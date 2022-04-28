@@ -3,12 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/anova/</loc>
+    <loc>/post/220420_anova_types/</loc>
     <lastmod>2022-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/</loc>
+    <loc>/categories/</loc>
     <lastmod>2022-04-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -18,62 +18,47 @@
   </url>
   
   <url>
-    <loc>/author/pol-castellano-escuder/</loc>
-    <lastmod>2022-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/</loc>
     <lastmod>2022-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication-type/2/</loc>
-    <lastmod>2021-07-01T00:00:00-04:00</lastmod>
+    <loc>/tag/r/</loc>
+    <lastmod>2022-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/author/alex-sanchez-pla/</loc>
-    <lastmod>2021-07-01T00:00:00-04:00</lastmod>
+    <loc>/category/r/</loc>
+    <lastmod>2022-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/author/cristina-andres-lacueva/</loc>
-    <lastmod>2021-07-01T00:00:00-04:00</lastmod>
+    <loc>/tag/stats/</loc>
+    <lastmod>2022-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/author/francesc-carmona-pontaque/</loc>
-    <lastmod>2021-07-01T00:00:00-04:00</lastmod>
+    <loc>/category/stats/</loc>
+    <lastmod>2022-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/ploscompbiol_2021/</loc>
-    <lastmod>2021-07-01T00:00:00-04:00</lastmod>
+    <loc>/tags/</loc>
+    <lastmod>2022-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2021-07-01T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
-    <lastmod>2021-07-01T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/raul-gonzalez-dominguez/</loc>
-    <lastmod>2021-07-01T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/talk/eurobioc2020/</loc>
-    <lastmod>2020-12-18T00:00:00-05:00</lastmod>
+    <loc>/talk/bioc2021/</loc>
+    <lastmod>2021-08-06T00:00:00-04:00</lastmod>
   </url>
   
   <url>
     <loc>/talk/</loc>
+    <lastmod>2021-08-06T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/eurobioc2020/</loc>
     <lastmod>2020-12-18T00:00:00-05:00</lastmod>
   </url>
   
@@ -90,16 +75,6 @@
   <url>
     <loc>/talk/ifow2020/</loc>
     <lastmod>2020-09-23T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/david-s.-wishart/</loc>
-    <lastmod>2020-04-22T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/database_2020/</loc>
-    <lastmod>2020-04-22T00:00:00-04:00</lastmod>
   </url>
   
   <url>
@@ -138,56 +113,6 @@
   </url>
   
   <url>
-    <loc>/author/carles-lerin/</loc>
-    <lastmod>2018-07-08T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/daniel-cuadras/</loc>
-    <lastmod>2018-07-08T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/josep-jimenez-chillaron/</loc>
-    <lastmod>2018-07-08T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/obesity_2018/</loc>
-    <lastmod>2018-07-08T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/marina-llobet/</loc>
-    <lastmod>2018-07-08T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/marta-ramon-krauel/</loc>
-    <lastmod>2018-07-08T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/maria-leal-witt/</loc>
-    <lastmod>2018-07-08T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/pol-castellano/</loc>
-    <lastmod>2018-07-08T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/sara-samino/</loc>
-    <lastmod>2018-07-08T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/oscar-yanes/</loc>
-    <lastmod>2018-07-08T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/talk/metnet2018/</loc>
     <lastmod>2018-02-02T00:00:00-05:00</lastmod>
   </url>
@@ -203,7 +128,7 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/authors/</loc>
   </url>
   
   <url>
@@ -211,7 +136,11 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/publication_types/</loc>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
   </url>
   
 </urlset>

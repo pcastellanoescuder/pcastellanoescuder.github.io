@@ -14,12 +14,17 @@
     
     <item>
       <title>ANOVA types in a nutshell</title>
-      <link>/post/anova/</link>
+      <link>/post/220420_anova_types/</link>
       <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>/post/anova/</guid>
-      <description>&lt;figure&gt;
+      <guid>/post/220420_anova_types/</guid>
+      <description>
+
+
+&lt;figure&gt;
 &lt;img src=&#34;/img/anova.jpg&#34; width=&#34;80%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;
-&lt;figcaption align=&#34;center&#34;&gt;Photo by &lt;a href=&#34;https://unsplash.com/@szmigieldesign?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&#34;&gt;Lukasz Szmigiel&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/s/photos/nature?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;&lt;/figcaption&gt;  
+&lt;figcaption align=&#34;center&#34;&gt;
+Photo by &lt;a href=&#34;https://unsplash.com/@szmigieldesign?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&#34;&gt;Lukasz Szmigiel&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/s/photos/nature?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&#34;&gt;Unsplash&lt;/a&gt;
+&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;Yes, there are different types of ANOVA. And yes, they can give different outputs depending on the data.&lt;/p&gt;
 &lt;p&gt;ANOVA is a widely used statistical method used to test the effect of one or more factorial variables (independent terms) on a continuous numerical variable (dependent term). This method aims to split the total variation of the dependent variable into one or more sources of variation using the Sum of Squares, and unveiling if independent variables have a significant effect on the dependent variable. There are three basic assumptions in ANOVA:&lt;/p&gt;
@@ -30,12 +35,11 @@
 &lt;/ul&gt;
 &lt;p&gt;In case of testing the effect of only one independent variable, we will be using the &lt;strong&gt;One-Way ANOVA&lt;/strong&gt;. However, if we want to test two independent variables, we will use the &lt;strong&gt;Two-Way ANOVA&lt;/strong&gt;. In the same way, if we want to test the effect of three or more factorial independent variables, we will call it &lt;strong&gt;X-Way ANOVA&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;For example, we want to assess the effects of diet and exercises on weight loss in 10 sedentary males. Fortunately, the data for this experiment can be found in the &lt;code&gt;datarium&lt;/code&gt; R package. Here, our factorial independent variables are &lt;code&gt;diet&lt;/code&gt; and &lt;code&gt;exercises&lt;/code&gt;, and our dependent numeric variable is the weight loss score measured at the end of each trial (&lt;code&gt;t3&lt;/code&gt;). For more info about the dataset see &lt;code&gt;?datarium::weightloss&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(tidyverse)
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 library(datarium)
 data(weightloss)
 
-head(weightloss)
-&lt;/code&gt;&lt;/pre&gt;
+head(weightloss)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;# A tibble: 6 × 6
   id    diet  exercises    t1    t2    t3
   &amp;lt;fct&amp;gt; &amp;lt;fct&amp;gt; &amp;lt;fct&amp;gt;     &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
@@ -44,191 +48,177 @@ head(weightloss)
 3 3     no    no         11.4 11.1   11.4
 4 4     no    no         11.1  9.5   11.1
 5 5     no    no          9.5  9.73  12.3
-6 6     no    no          9.5 12.7   10.4
-&lt;/code&gt;&lt;/pre&gt;
+6 6     no    no          9.5 12.7   10.4&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Now, we can try to answer different questions given this dataset and the above concepts.&lt;/p&gt;
-&lt;h1 id=&#34;one-way-anova&#34;&gt;One-Way ANOVA&lt;/h1&gt;
+&lt;div id=&#34;one-way-anova&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;One-Way ANOVA&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;What is the effect of the &lt;code&gt;diet&lt;/code&gt; on the weight loss score without regard to &lt;code&gt;exercises&lt;/code&gt;?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;summary(aov(t3 ~ diet, data = weightloss))
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(aov(t3 ~ diet, data = weightloss))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value Pr(&amp;gt;F)
 diet         1   0.09   0.091   0.017  0.895
-Residuals   46 239.61   5.209               
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Seems that &lt;code&gt;diet&lt;/code&gt; alone doesn&amp;rsquo;t have a significant effect on weight loss.&lt;/p&gt;
+Residuals   46 239.61   5.209               &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Seems that &lt;code&gt;diet&lt;/code&gt; alone doesn’t have a significant effect on weight loss.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;What is the effect of the &lt;code&gt;exercises&lt;/code&gt; on the weight loss score without regard to &lt;code&gt;diet&lt;/code&gt;?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;summary(aov(t3 ~ exercises, data = weightloss))
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(aov(t3 ~ exercises, data = weightloss))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value   Pr(&amp;gt;F)    
 exercises    1  116.7  116.66   43.61 3.58e-08 ***
 Residuals   46  123.0    2.67                     
 ---
-Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-&lt;/code&gt;&lt;/pre&gt;
+Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;On the contrary, seems that &lt;code&gt;exercises&lt;/code&gt; have a significant effect on weight loss.&lt;/p&gt;
-&lt;h1 id=&#34;two-way-anova&#34;&gt;Two-Way ANOVA&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&#34;two-way-anova&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Two-Way ANOVA&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Is there a &lt;strong&gt;unique&lt;/strong&gt; effect of the &lt;code&gt;diet&lt;/code&gt; &lt;strong&gt;or&lt;/strong&gt; &lt;code&gt;exercises&lt;/code&gt; on the weight loss score (&lt;code&gt;t3&lt;/code&gt;)?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;summary(aov(t3 ~ diet + exercises, data = weightloss))
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(aov(t3 ~ diet + exercises, data = weightloss))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value   Pr(&amp;gt;F)    
 diet         1   0.09    0.09   0.033    0.856    
 exercises    1 116.66  116.66  42.697 5.01e-08 ***
 Residuals   45 122.95    2.73                     
 ---
-Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-&lt;/code&gt;&lt;/pre&gt;
+Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Given these results, there seems to be an effect of &lt;code&gt;exercises&lt;/code&gt; but not &lt;code&gt;diet&lt;/code&gt; on weight loss.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Does the effect of the &lt;code&gt;diet&lt;/code&gt; depend on the &lt;code&gt;exercises&lt;/code&gt;? Here we need an interaction term (&lt;code&gt;*&lt;/code&gt;). Interaction effects represent the combined effects of factors on the dependent variable. When an interaction effect is present, the impact of one factor depends on the level of the other factor.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;summary(aov(t3 ~ diet * exercises, data = weightloss))
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(aov(t3 ~ diet * exercises, data = weightloss))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;               Df Sum Sq Mean Sq F value   Pr(&amp;gt;F)    
 diet            1   0.09    0.09   0.064    0.801    
 exercises       1 116.66  116.66  82.493 1.19e-11 ***
 diet:exercises  1  60.73   60.73  42.943 5.18e-08 ***
 Residuals      44  62.22    1.41                     
 ---
-Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-&lt;/code&gt;&lt;/pre&gt;
+Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;As we can see here, the effect of the interaction is significant (&lt;code&gt;diet:exercises&lt;/code&gt;). This means that our two independent variables depend on each other and that the interaction between them has an effect on our dependent variable, i.e., weight loss (&lt;code&gt;t3&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;So far, all of this probably sounds pretty familiar.&lt;/p&gt;
-&lt;p&gt;The &amp;ldquo;problem&amp;rdquo; comes when we realize that there are different ways to calculate the Sum of Squares, and therefore to compute these ANOVA models. Often, this is an unknown fact, but not only that, many widely used software for statistical analysis use different types of ANOVA by default (this is even less known), so we need to be careful about which ANOVA model we want to use, what software we are using, etc. Moreover, this can be even more confusing because &lt;strong&gt;if the data is balanced, the different types of ANOVA will give the same result, but they don&amp;rsquo;t in case of unbalanced data&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The “problem” comes when we realize that there are different ways to calculate the Sum of Squares, and therefore to compute these ANOVA models. Often, this is an unknown fact, but not only that, many widely used software for statistical analysis use different types of ANOVA by default (this is even less known), so we need to be careful about which ANOVA model we want to use, what software we are using, etc. Moreover, this can be even more confusing because &lt;strong&gt;if the data is balanced, the different types of ANOVA will give the same result, but they don’t in case of unbalanced data&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;There are three types of ANOVA depending on how the Sum of Squares is done: ANOVA type I, II, and III.&lt;/p&gt;
-&lt;h1 id=&#34;anova-type-i&#34;&gt;ANOVA Type I&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&#34;anova-type-i&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;ANOVA Type I&lt;/h1&gt;
 &lt;p&gt;The fact that characterizes this type of ANOVA is that the Sum of Squares is calculated sequentially, so the variation will be allocated to the different variables in order.&lt;/p&gt;
 &lt;p&gt;Given our Two-Way ANOVA model (independent variables &lt;code&gt;diet&lt;/code&gt; and &lt;code&gt;exercises&lt;/code&gt;), this type of ANOVA will assign the maximum variation to the &lt;code&gt;diet&lt;/code&gt; variable, and the remaining variation to the &lt;code&gt;exercises&lt;/code&gt; variable and the residuals, in that order.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;summary(aov(t3 ~ diet + exercises, data = weightloss))
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(aov(t3 ~ diet + exercises, data = weightloss))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value   Pr(&amp;gt;F)    
 diet         1   0.09    0.09   0.033    0.856    
 exercises    1 116.66  116.66  42.697 5.01e-08 ***
 Residuals   45 122.95    2.73                     
 ---
-Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;summary(aov(t3 ~ exercises + diet, data = weightloss))
-&lt;/code&gt;&lt;/pre&gt;
+Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(aov(t3 ~ exercises + diet, data = weightloss))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value   Pr(&amp;gt;F)    
 exercises    1 116.66  116.66  42.697 5.01e-08 ***
 diet         1   0.09    0.09   0.033    0.856    
 Residuals   45 122.95    2.73                     
 ---
-Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We can see that the result doesn&amp;rsquo;t change if we flip the factors in the formula. This is because our data is balanced. Let&amp;rsquo;s remove some random samples and repeat the process&amp;hellip;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;weightloss_unbal &amp;lt;- weightloss %&amp;gt;% 
+Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can see that the result doesn’t change if we flip the factors in the formula. This is because our data is balanced. Let’s remove some random samples and repeat the process…&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;weightloss_unbal &amp;lt;- weightloss %&amp;gt;% 
   dplyr::sample_n(floor(nrow(.)*0.9)) # remove random 10%
   
-summary(aov(t3 ~ diet + exercises, data = weightloss_unbal))
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value   Pr(&amp;gt;F)    
-diet         1    0.0    0.00    0.00    0.987    
-exercises    1  101.3  101.33   35.57 5.31e-07 ***
-Residuals   40  113.9    2.85                     
+summary(aov(t3 ~ diet + exercises, data = weightloss_unbal))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value  Pr(&amp;gt;F)    
+diet         1   0.12    0.12   0.042   0.838    
+exercises    1  89.93   89.93  32.342 1.3e-06 ***
+Residuals   40 111.23    2.78                    
 ---
-Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;summary(aov(t3 ~ exercises + diet, data = weightloss_unbal))
-&lt;/code&gt;&lt;/pre&gt;
+Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(aov(t3 ~ exercises + diet, data = weightloss_unbal))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value   Pr(&amp;gt;F)    
-exercises    1 101.26  101.26  35.547 5.34e-07 ***
-diet         1   0.07    0.07   0.025    0.875    
-Residuals   40 113.94    2.85                     
+exercises    1  89.75   89.75  32.276 1.33e-06 ***
+diet         1   0.30    0.30   0.108    0.744    
+Residuals   40 111.23    2.78                     
 ---
-Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-&lt;/code&gt;&lt;/pre&gt;
+Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Now, we can appreciate differences in the results when we flip the order of factors! Remember that &lt;strong&gt;in ANOVA type I, the Sum of Squares is sequential, so the order matters!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;This type of ANOVA is used by the &lt;strong&gt;R software&lt;/strong&gt; (by &lt;code&gt;aov()&lt;/code&gt; and &lt;code&gt;anova()&lt;/code&gt; functions). Therefore, if you use R in your analysis, keep in mind that the order of the independent variables in your formula matters, because if your data is not perfectly balanced, your result will change according to the order of variables. Finally, if your data is not balanced, maybe you should consider another type of ANOVA, and if you&amp;rsquo;re interested in computing other type of ANOVA in R, you can use the function &lt;code&gt;Anova()&lt;/code&gt; from the &lt;code&gt;car&lt;/code&gt; package, or &lt;code&gt;anova_test()&lt;/code&gt; from the &lt;code&gt;rstatix&lt;/code&gt; package.&lt;/p&gt;
-&lt;h1 id=&#34;anova-type-ii&#34;&gt;ANOVA Type II&lt;/h1&gt;
+&lt;p&gt;This type of ANOVA is used by the &lt;strong&gt;R software&lt;/strong&gt; (by &lt;code&gt;aov()&lt;/code&gt; and &lt;code&gt;anova()&lt;/code&gt; functions). Therefore, if you use R in your analysis, keep in mind that the order of the independent variables in your formula matters, because if your data is not perfectly balanced, your result will change according to the order of variables. Finally, if your data is not balanced, maybe you should consider another type of ANOVA, and if you’re interested in computing other type of ANOVA in R, you can use the function &lt;code&gt;Anova()&lt;/code&gt; from the &lt;code&gt;car&lt;/code&gt; package, or &lt;code&gt;anova_test()&lt;/code&gt; from the &lt;code&gt;rstatix&lt;/code&gt; package.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;anova-type-ii&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;ANOVA Type II&lt;/h1&gt;
 &lt;p&gt;In ANOVA type II, the variation assigned to the first independent variable takes into account the second and vice versa. In addition, the Sum of Squares of ANOVA type II have no interaction effects. Therefore, &lt;strong&gt;we will only use this type of ANOVA when we have no interaction between our independent variables&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Thus, when we are facing unbalanced data (and no interaction), this type of ANOVA is much better than the first type as we do not have to worry about the order of variables in our model. We see below (in R) as if we exchange the order of factors the result doesn&amp;rsquo;t change (as it did in the previous ANOVA type).&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;mod &amp;lt;- lm(t3 ~ diet + exercises, data = weightloss_unbal)
-car::Anova(mod, type = &amp;quot;II&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Thus, when we are facing unbalanced data (and no interaction), this type of ANOVA is much better than the first type as we do not have to worry about the order of variables in our model. We see below (in R) as if we exchange the order of factors the result doesn’t change (as it did in the previous ANOVA type).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mod &amp;lt;- lm(t3 ~ diet + exercises, data = weightloss_unbal)
+car::Anova(mod, type = &amp;quot;II&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;Anova Table (Type II tests)
 
 Response: t3
            Sum Sq Df F value    Pr(&amp;gt;F)    
-diet        0.072  1  0.0252    0.8745    
-exercises 101.327  1 35.5723 5.306e-07 ***
-Residuals 113.939 40                      
+diet        0.301  1  0.1082    0.7439    
+exercises  89.932  1 32.3422 1.301e-06 ***
+Residuals 111.226 40                      
 ---
-Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;mod2 &amp;lt;- lm(t3 ~ exercises + diet, data = weightloss_unbal)
-car::Anova(mod2, type = &amp;quot;II&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
+Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mod2 &amp;lt;- lm(t3 ~ exercises + diet, data = weightloss_unbal)
+car::Anova(mod2, type = &amp;quot;II&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;Anova Table (Type II tests)
 
 Response: t3
            Sum Sq Df F value    Pr(&amp;gt;F)    
-exercises 101.327  1 35.5723 5.306e-07 ***
-diet        0.072  1  0.0252    0.8745    
-Residuals 113.939 40                      
+exercises  89.932  1 32.3422 1.301e-06 ***
+diet        0.301  1  0.1082    0.7439    
+Residuals 111.226 40                      
 ---
-Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-&lt;/code&gt;&lt;/pre&gt;
+Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This type of ANOVA is the default type in &lt;strong&gt;Python&lt;/strong&gt; (&lt;code&gt;statsmodels&lt;/code&gt; library), so if this is your software, well for you and less headaches!&lt;/p&gt;
-&lt;h1 id=&#34;anova-type-iii&#34;&gt;ANOVA Type III&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&#34;anova-type-iii&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;ANOVA Type III&lt;/h1&gt;
 &lt;p&gt;The last one is the ANOVA type III, also called partial Sum of Squares.&lt;/p&gt;
-&lt;p&gt;Like ANOVA type II, ANOVA type III Sum of Squares is not sequential, so the order of the independent variables doesn&amp;rsquo;t matter. However, unlike type II, type III allows an interaction effect between independent variables.&lt;/p&gt;
-&lt;p&gt;See below how ANOVA type III allows interaction and the result doesn&amp;rsquo;t change if we flip the independent factors.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;mod3 &amp;lt;- lm(t3 ~ diet * exercises, data = weightloss_unbal)
-car::Anova(mod3, type = &amp;quot;III&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Like ANOVA type II, ANOVA type III Sum of Squares is not sequential, so the order of the independent variables doesn’t matter. However, unlike type II, type III allows an interaction effect between independent variables.&lt;/p&gt;
+&lt;p&gt;See below how ANOVA type III allows interaction and the result doesn’t change if we flip the independent factors.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mod3 &amp;lt;- lm(t3 ~ diet * exercises, data = weightloss_unbal)
+car::Anova(mod3, type = &amp;quot;III&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;Anova Table (Type III tests)
 
 Response: t3
                 Sum Sq Df F value    Pr(&amp;gt;F)    
-(Intercept)    1288.91  1 868.648 &amp;lt; 2.2e-16 ***
-diet             30.76  1  20.732 5.071e-05 ***
-exercises       153.50  1 103.450 1.580e-12 ***
-diet:exercises   56.07  1  37.788 3.234e-07 ***
-Residuals        57.87 39                      
+(Intercept)    1320.89  1 845.844 &amp;lt; 2.2e-16 ***
+diet             28.70  1  18.376 0.0001151 ***
+exercises       135.88  1  87.010 1.767e-11 ***
+diet:exercises   50.32  1  32.224 1.457e-06 ***
+Residuals        60.90 39                      
 ---
-Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;mod4 &amp;lt;- lm(t3 ~ exercises * diet, data = weightloss_unbal)
-car::Anova(mod4, type = &amp;quot;III&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
+Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mod4 &amp;lt;- lm(t3 ~ exercises * diet, data = weightloss_unbal)
+car::Anova(mod4, type = &amp;quot;III&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;Anova Table (Type III tests)
 
 Response: t3
                 Sum Sq Df F value    Pr(&amp;gt;F)    
-(Intercept)    1288.91  1 868.648 &amp;lt; 2.2e-16 ***
-exercises       153.50  1 103.450 1.580e-12 ***
-diet             30.76  1  20.732 5.071e-05 ***
-exercises:diet   56.07  1  37.788 3.234e-07 ***
-Residuals        57.87 39                      
+(Intercept)    1320.89  1 845.844 &amp;lt; 2.2e-16 ***
+exercises       135.88  1  87.010 1.767e-11 ***
+diet             28.70  1  18.376 0.0001151 ***
+exercises:diet   50.32  1  32.224 1.457e-06 ***
+Residuals        60.90 39                      
 ---
-Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-&lt;/code&gt;&lt;/pre&gt;
+Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This type of ANOVA is the default type in the &lt;strong&gt;SAS&lt;/strong&gt; and &lt;strong&gt;SPSS&lt;/strong&gt; software. Although I mostly use R, this should be the default ANOVA type in my opinion.&lt;/p&gt;
-&lt;h1 id=&#34;take-home-ideas&#34;&gt;Take home ideas&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&#34;take-home-ideas&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Take home ideas&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;If the data is balanced, the type of ANOVA doesn&amp;rsquo;t matter&lt;/li&gt;
+&lt;li&gt;If the data is balanced, the type of ANOVA doesn’t matter&lt;/li&gt;
 &lt;li&gt;ANOVA type I should be used when there is a serious theoretical reason for it. Put the most important independent variable first and it will receive the maximum amount of variation&lt;/li&gt;
-&lt;li&gt;ANOVA type II should be used when we don&amp;rsquo;t expect a true interaction between independent variables&lt;/li&gt;
+&lt;li&gt;ANOVA type II should be used when we don’t expect a true interaction between independent variables&lt;/li&gt;
 &lt;li&gt;ANOVA type III should be used when a true interaction between independent variables is expected&lt;/li&gt;
-&lt;li&gt;Don&amp;rsquo;t be alarmed if your results do not match those of your colleague who is using other software, there is always an explanation&lt;/li&gt;
+&lt;li&gt;Don’t be alarmed if your results do not match those of your colleague who is using other software, there is always an explanation&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 </description>
     </item>
     
     <item>
-      <title>POMAShiny: A user-friendly web-based workflow for metabolomics and proteomics data analysis</title>
-      <link>/publication/ploscompbiol_2021/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 -0400</pubDate>
-      <guid>/publication/ploscompbiol_2021/</guid>
-      <description>&lt;p&gt;Metabolomics and proteomics, like other omics domains, usually face a data mining challenge in providing an understandable output to advance in biomarker discovery and precision medicine. Often, statistical analysis is one of the most difficult challenges and it is critical in the subsequent biological interpretation of the results. Because of this, combined with the computational programming skills needed for this type of analysis, several bioinformatic tools aimed at simplifying metabolomics and proteomics data analysis have emerged. However, sometimes the analysis is still limited to a few hidebound statistical methods and to data sets with limited flexibility. POMAShiny is a web-based tool that provides a structured, flexible and user-friendly workflow for the visualization, exploration and statistical analysis of metabolomics and proteomics data. This tool integrates several statistical methods, some of them widely used in other types of omics, and it is based on the POMA R/Bioconductor package, which increases the reproducibility and flexibility of analyses outside the web environment. POMAShiny and POMA are both freely available at &lt;a href=&#34;https://github.com/nutrimetabolomics/POMAShiny&#34;&gt;https://github.com/nutrimetabolomics/POMAShiny&lt;/a&gt; and &lt;a href=&#34;https://github.com/nutrimetabolomics/POMA,&#34;&gt;https://github.com/nutrimetabolomics/POMA,&lt;/a&gt; respectively.&lt;/p&gt;
-</description>
+      <title>POMA: A user-friendly workflow for metabolomics and proteomics data analysis</title>
+      <link>/talk/bioc2021/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 -0400</pubDate>
+      <guid>/talk/bioc2021/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -262,15 +252,6 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
       <link>/talk/ifow2020/</link>
       <pubDate>Wed, 23 Sep 2020 00:00:00 -0400</pubDate>
       <guid>/talk/ifow2020/</guid>
-      <description>&lt;p&gt;Nutrition research can be conducted by using two complementary approaches: (i) traditional self-reporting methods or (ii) via metabolomics techniques to analyze food intake biomarkers in biofluids. However, the complexity and heterogeneity of these two very different types of data often hinder their analysis and integration. To manage this challenge, we have developed a novel ontology that describes food and their associated metabolite entities in a hierarchical way. This ontology uses a formal naming system, category definitions, properties and relations between both types of data. The ontology presented is called FOBI (Food-Biomarker Ontology) and it is composed of two interconnected sub-ontologies. One is a ’Food Ontology’ consisting of raw foods and ‘multi-component foods’ while the second is a ‘Biomarker Ontology’ containing food intake biomarkers classified by their chemical classes. These two sub-ontologies are conceptually independent but interconnected by different properties. This allows data and information regarding foods and food biomarkers to be visualized in a bidirectional way, going from metabolomics to nutritional data or vice versa. Potential applications of this ontology include the annotation of foods and biomarkers using a well-defined and consistent nomenclature, the standardized reporting of metabolomics workflows (e.g. metabolite identification, experimental design) or the application of different enrich- ment analysis approaches to analyze nutrimetabolomic data. Availability: FOBI is freely available in both OWL (Web Ontology Language) and OBO (Open Biomedical Ontolo- gies) formats at the project’s Github repository (&lt;a href=&#34;https://github.com/pcastellanoescuder/FoodBiomarkerOntology&#34;&gt;https://github.com/pcastellanoescuder/FoodBiomarkerOntology&lt;/a&gt;) and FOBI visualization tool is available in &lt;a href=&#34;https://polcastellano.shinyapps.io/FOBI_Visualization_Tool/&#34;&gt;https://polcastellano.shinyapps.io/FOBI_Visualization_Tool/&lt;/a&gt; .&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>FOBI: an ontology to represent food intake data and associate it with metabolomic data</title>
-      <link>/publication/database_2020/</link>
-      <pubDate>Wed, 22 Apr 2020 00:00:00 -0400</pubDate>
-      <guid>/publication/database_2020/</guid>
       <description>&lt;p&gt;Nutrition research can be conducted by using two complementary approaches: (i) traditional self-reporting methods or (ii) via metabolomics techniques to analyze food intake biomarkers in biofluids. However, the complexity and heterogeneity of these two very different types of data often hinder their analysis and integration. To manage this challenge, we have developed a novel ontology that describes food and their associated metabolite entities in a hierarchical way. This ontology uses a formal naming system, category definitions, properties and relations between both types of data. The ontology presented is called FOBI (Food-Biomarker Ontology) and it is composed of two interconnected sub-ontologies. One is a ’Food Ontology’ consisting of raw foods and ‘multi-component foods’ while the second is a ‘Biomarker Ontology’ containing food intake biomarkers classified by their chemical classes. These two sub-ontologies are conceptually independent but interconnected by different properties. This allows data and information regarding foods and food biomarkers to be visualized in a bidirectional way, going from metabolomics to nutritional data or vice versa. Potential applications of this ontology include the annotation of foods and biomarkers using a well-defined and consistent nomenclature, the standardized reporting of metabolomics workflows (e.g. metabolite identification, experimental design) or the application of different enrich- ment analysis approaches to analyze nutrimetabolomic data. Availability: FOBI is freely available in both OWL (Web Ontology Language) and OBO (Open Biomedical Ontolo- gies) formats at the project’s Github repository (&lt;a href=&#34;https://github.com/pcastellanoescuder/FoodBiomarkerOntology&#34;&gt;https://github.com/pcastellanoescuder/FoodBiomarkerOntology&lt;/a&gt;) and FOBI visualization tool is available in &lt;a href=&#34;https://polcastellano.shinyapps.io/FOBI_Visualization_Tool/&#34;&gt;https://polcastellano.shinyapps.io/FOBI_Visualization_Tool/&lt;/a&gt; .&lt;/p&gt;
 </description>
     </item>
@@ -385,32 +366,6 @@ will connect with all of them. This ontology allows us to visualize data in a
 bidirectional way, going from metabolomics to nutritional data or vice versa. In
 addition, this ontology can also be useful for other analyses such as enrichment analysis
 or a novel concept, food-enrichment analysis.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Lifestyle intervention decreases urine trimethylamine N-oxide levels in prepubertal children with obesity</title>
-      <link>/publication/obesity_2018/</link>
-      <pubDate>Sun, 08 Jul 2018 00:00:00 -0400</pubDate>
-      <guid>/publication/obesity_2018/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Early lifestyle interventions in children with obesity decrease risk of future obesity
-and metabolic disorders. However, the metabolic effects of such interventions are not
-completely characterized.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Methods:&lt;/strong&gt; We analyzed the impact of lifestyle intervention in the urine metabolome from
-prepubertal children. We studied 34 prepubertal children with obesity before and after a 6-
-month-long lifestyle intervention program. We applied a nuclear magnetic resonance approach
-to obtain the metabolomic profile from urine samples. Partial Least Squares-Discriminant
-Analysis (PLS-DA) was used to achieve group classification and variable importance on
-projection (VIP) for biomarker selection.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Results:&lt;/strong&gt; The intervention reduced caloric intake by 10% (p&amp;lt;0.05) and BMI-SDS by 0.47 SD
-(p&amp;lt;0.001). PLS-DA identified trimethylamine N-oxide (TMAO, VIP=2.21) as the metabolite with
-the highest discrimination properties between groups. Urine TMAO levels were reduced after
-the intervention (p&amp;lt;0.05). TMAO is a biomarker of cardiovascular disease risk and is a product
-of gut microbiota-dependent metabolism of certain dietary compounds, including choline.
-Notably, changes in TMAO levels after the intervention did not correlate to differences in choline
-intake but were inversely associated with fiber intake (p&amp;lt;0.05).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Conclusions:&lt;/strong&gt; Our results indicate that TMAO levels are decreased by lifestyle intervention in
-children with obesity.&lt;/p&gt;
 </description>
     </item>
     

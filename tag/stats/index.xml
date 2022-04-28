@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts | Pol Castellano</title>
-    <link>/post/</link>
-      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    <description>Posts</description>
+    <title>stats | Pol Castellano</title>
+    <link>/tag/stats/</link>
+      <atom:link href="/tag/stats/index.xml" rel="self" type="application/rss+xml" />
+    <description>stats</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>Posts</title>
-      <link>/post/</link>
+      <title>stats</title>
+      <link>/tag/stats/</link>
     </image>
     
     <item>
@@ -210,15 +210,6 @@ Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39
 &lt;li&gt;Don’t be alarmed if your results do not match those of your colleague who is using other software, there is always an explanation&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Blogdown: Make your own website easily with R!</title>
-      <link>/post/blogdown/</link>
-      <pubDate>Wed, 26 Jun 2019 10:00:00 +0000</pubDate>
-      <guid>/post/blogdown/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/pcastellanoescuder/blogdown_slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Go to slides repository!&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
