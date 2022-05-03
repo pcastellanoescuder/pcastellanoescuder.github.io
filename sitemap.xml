@@ -1,146 +1,88 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/post/220420_anova_types/</loc>
     <lastmod>2022-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/</loc>
     <lastmod>2022-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/</loc>
     <lastmod>2022-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/</loc>
     <lastmod>2022-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/r/</loc>
     <lastmod>2022-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/category/r/</loc>
     <lastmod>2022-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/stats/</loc>
     <lastmod>2022-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/category/stats/</loc>
     <lastmod>2022-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/</loc>
     <lastmod>2022-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/talk/bioc2021/</loc>
-    <lastmod>2021-08-06T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/talk/</loc>
-    <lastmod>2021-08-06T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/talk/eurobioc2020/</loc>
-    <lastmod>2020-12-18T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-12-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/talk/metabolomics2020/</loc>
-    <lastmod>2020-10-27T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/talk/biocasia2020/</loc>
-    <lastmod>2020-10-15T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/talk/ifow2020/</loc>
-    <lastmod>2020-09-23T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/talk/metabomeeting2020/</loc>
-    <lastmod>2020-01-22T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-01-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/talk/jbg2019/</loc>
-    <lastmod>2019-12-17T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2019-12-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/talk/user2019/</loc>
-    <lastmod>2019-07-11T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2019-07-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/post/blogdown/</loc>
     <lastmod>2019-06-26T10:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/talk/biostatnet2019/</loc>
-    <lastmod>2019-01-25T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/talk/epimet2019/</loc>
-    <lastmod>2019-01-16T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2019-01-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/talk/jbg2018/</loc>
-    <lastmod>2018-12-20T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/talk/metnet2018/</loc>
-    <lastmod>2018-02-02T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2018-02-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/talk/jbg2017/</loc>
-    <lastmod>2017-12-20T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2017-12-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/talk/febs2017/</loc>
-    <lastmod>2017-10-23T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2017-10-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/authors/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/pol-castellano-escuder/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication_types/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/</loc>
   </url>
-  
 </urlset>

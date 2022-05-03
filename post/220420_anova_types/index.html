@@ -254,8 +254,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
 
   <link rel="canonical" href="/post/220420_anova_types/">
 
@@ -278,8 +278,8 @@
   <meta property="og:site_name" content="Pol Castellano">
   <meta property="og:url" content="/post/220420_anova_types/">
   <meta property="og:title" content="ANOVA types in a nutshell | Pol Castellano">
-  <meta property="og:description" content="Know the differences between different ANOVA types"><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Know the differences between different ANOVA types"><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2022-04-20T00:00:00&#43;00:00">
@@ -325,7 +325,7 @@
     "name": "Pol Castellano",
     "logo": {
       "@type": "ImageObject",
-      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
   "description": "Know the differences between different ANOVA types"
@@ -821,16 +821,16 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
   
 summary(aov(t3 ~ diet + exercises, data = weightloss_unbal))</code></pre>
 <pre><code>            Df Sum Sq Mean Sq F value  Pr(&gt;F)    
-diet         1   0.12    0.12   0.042   0.838    
-exercises    1  89.93   89.93  32.342 1.3e-06 ***
-Residuals   40 111.23    2.78                    
+diet         1   2.95    2.95   1.113   0.298    
+exercises    1  90.42   90.42  34.168 7.8e-07 ***
+Residuals   40 105.85    2.65                    
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <pre class="r"><code>summary(aov(t3 ~ exercises + diet, data = weightloss_unbal))</code></pre>
 <pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
-exercises    1  89.75   89.75  32.276 1.33e-06 ***
-diet         1   0.30    0.30   0.108    0.744    
-Residuals   40 111.23    2.78                     
+exercises    1  92.30   92.30  34.880 6.41e-07 ***
+diet         1   1.06    1.06   0.402     0.53    
+Residuals   40 105.85    2.65                     
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Now, we can appreciate differences in the results when we flip the order of factors! Remember that <strong>in ANOVA type I, the Sum of Squares is sequential, so the order matters!</strong></p>
@@ -846,9 +846,9 @@ car::Anova(mod, type = &quot;II&quot;)</code></pre>
 
 Response: t3
            Sum Sq Df F value    Pr(&gt;F)    
-diet        0.301  1  0.1082    0.7439    
-exercises  89.932  1 32.3422 1.301e-06 ***
-Residuals 111.226 40                      
+diet        1.064  1   0.402    0.5296    
+exercises  90.422  1  34.169 7.797e-07 ***
+Residuals 105.854 40                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <pre class="r"><code>mod2 &lt;- lm(t3 ~ exercises + diet, data = weightloss_unbal)
@@ -857,9 +857,9 @@ car::Anova(mod2, type = &quot;II&quot;)</code></pre>
 
 Response: t3
            Sum Sq Df F value    Pr(&gt;F)    
-exercises  89.932  1 32.3422 1.301e-06 ***
-diet        0.301  1  0.1082    0.7439    
-Residuals 111.226 40                      
+exercises  90.422  1  34.169 7.797e-07 ***
+diet        1.064  1   0.402    0.5296    
+Residuals 105.854 40                      
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>This type of ANOVA is the default type in <strong>Python</strong> (<code>statsmodels</code> library), so if this is your software, well for you and less headaches!</p>
@@ -874,12 +874,12 @@ car::Anova(mod3, type = &quot;III&quot;)</code></pre>
 <pre><code>Anova Table (Type III tests)
 
 Response: t3
-                Sum Sq Df F value    Pr(&gt;F)    
-(Intercept)    1320.89  1 845.844 &lt; 2.2e-16 ***
-diet             28.70  1  18.376 0.0001151 ***
-exercises       135.88  1  87.010 1.767e-11 ***
-diet:exercises   50.32  1  32.224 1.457e-06 ***
-Residuals        60.90 39                      
+                Sum Sq Df  F value    Pr(&gt;F)    
+(Intercept)    1573.23  1 1442.983 &lt; 2.2e-16 ***
+diet             41.45  1   38.016 3.048e-07 ***
+exercises       153.35  1  140.651 1.653e-14 ***
+diet:exercises   63.33  1   58.090 3.049e-09 ***
+Residuals        42.52 39                       
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <pre class="r"><code>mod4 &lt;- lm(t3 ~ exercises * diet, data = weightloss_unbal)
@@ -887,12 +887,12 @@ car::Anova(mod4, type = &quot;III&quot;)</code></pre>
 <pre><code>Anova Table (Type III tests)
 
 Response: t3
-                Sum Sq Df F value    Pr(&gt;F)    
-(Intercept)    1320.89  1 845.844 &lt; 2.2e-16 ***
-exercises       135.88  1  87.010 1.767e-11 ***
-diet             28.70  1  18.376 0.0001151 ***
-exercises:diet   50.32  1  32.224 1.457e-06 ***
-Residuals        60.90 39                      
+                Sum Sq Df  F value    Pr(&gt;F)    
+(Intercept)    1573.23  1 1442.983 &lt; 2.2e-16 ***
+exercises       153.35  1  140.651 1.653e-14 ***
+diet             41.45  1   38.016 3.048e-07 ***
+exercises:diet   63.33  1   58.090 3.049e-09 ***
+Residuals        42.52 39                       
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>This type of ANOVA is the default type in the <strong>SAS</strong> and <strong>SPSS</strong> software. Although I mostly use R, this should be the default ANOVA type in my opinion.</p>
@@ -1256,7 +1256,7 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
     
     
     
-    <script src="/js/wowchemy.min.4c2bca31150ce93c5a5e43b8a50f22fd.js"></script>
+    <script src="/js/wowchemy.min.cd29c13e3da221a8d10c6eec88b953cb.js"></script>
 
     
 
