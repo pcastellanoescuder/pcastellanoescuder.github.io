@@ -5,12 +5,27 @@
     <link>/category/stats/</link>
       <atom:link href="/category/stats/index.xml" rel="self" type="application/rss+xml" />
     <description>stats</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Tue, 10 May 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>stats</title>
       <link>/category/stats/</link>
     </image>
+    
+    <item>
+      <title>Linear Mixed Models</title>
+      <link>/post/220510_linear_mixed_models/</link>
+      <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate>
+      <guid>/post/220510_linear_mixed_models/</guid>
+      <description>
+
+
+&lt;!-- &lt;figure&gt; --&gt;
+&lt;!-- &lt;img src=&#34;/img/anova.jpg&#34; width=&#34;80%&#34; style=&#34;display: block; margin: auto;&#34; /&gt; --&gt;
+&lt;!-- &lt;figcaption align=&#34;center&#34;&gt;Photo by &lt;a href=&#34;https://unsplash.com/es/fotos/oBUQ_QlIn48&#34;&gt;Lukasz Szmigiel&lt;/a&gt; on &lt;a href=&#34;https://unsplash.com/es/fotos/oBUQ_QlIn48&#34;&gt;Unsplash&lt;/a&gt;&lt;/figcaption&gt; --&gt;
+&lt;!-- &lt;/figure&gt; --&gt;
+</description>
+    </item>
     
     <item>
       <title>ANOVA types in a nutshell</title>
