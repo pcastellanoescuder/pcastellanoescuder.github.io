@@ -5,7 +5,7 @@
     <link>/category/r/</link>
       <atom:link href="/category/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Tue, 10 May 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Pol Castellano</copyright><lastBuildDate>Wed, 18 May 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>R</title>
@@ -13,9 +13,9 @@
     </image>
     
     <item>
-      <title>Linear Mixed Models</title>
+      <title>Linear Mixed Models in R</title>
       <link>/post/220510_linear_mixed_models/</link>
-      <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
       <guid>/post/220510_linear_mixed_models/</guid>
       <description>
 
@@ -138,17 +138,17 @@ Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39
   dplyr::sample_n(floor(nrow(.)*0.9)) # remove random 10%
   
 summary(aov(t3 ~ diet + exercises, data = weightloss_unbal))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value  Pr(&amp;gt;F)    
-diet         1   2.95    2.95   1.113   0.298    
-exercises    1  90.42   90.42  34.168 7.8e-07 ***
-Residuals   40 105.85    2.65                    
+&lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value   Pr(&amp;gt;F)    
+diet         1   0.95    0.95   0.382     0.54    
+exercises    1  82.57   82.57  33.185 1.03e-06 ***
+Residuals   40  99.53    2.49                     
 ---
 Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(aov(t3 ~ exercises + diet, data = weightloss_unbal))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value   Pr(&amp;gt;F)    
-exercises    1  92.30   92.30  34.880 6.41e-07 ***
-diet         1   1.06    1.06   0.402     0.53    
-Residuals   40 105.85    2.65                     
+&lt;pre&gt;&lt;code&gt;            Df Sum Sq Mean Sq F value  Pr(&amp;gt;F)    
+exercises    1  82.98   82.98  33.349 9.8e-07 ***
+diet         1   0.54    0.54   0.218   0.643    
+Residuals   40  99.53    2.49                    
 ---
 Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Now, we can appreciate differences in the results when we flip the order of factors! Remember that &lt;strong&gt;in ANOVA type I, the Sum of Squares is sequential, so the order matters!&lt;/strong&gt;&lt;/p&gt;
@@ -163,10 +163,10 @@ car::Anova(mod, type = &amp;quot;II&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;Anova Table (Type II tests)
 
 Response: t3
-           Sum Sq Df F value    Pr(&amp;gt;F)    
-diet        1.064  1   0.402    0.5296    
-exercises  90.422  1  34.169 7.797e-07 ***
-Residuals 105.854 40                      
+          Sum Sq Df F value    Pr(&amp;gt;F)    
+diet       0.543  1  0.2182    0.6429    
+exercises 82.573  1 33.1852 1.026e-06 ***
+Residuals 99.530 40                      
 ---
 Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mod2 &amp;lt;- lm(t3 ~ exercises + diet, data = weightloss_unbal)
@@ -174,10 +174,10 @@ car::Anova(mod2, type = &amp;quot;II&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;Anova Table (Type II tests)
 
 Response: t3
-           Sum Sq Df F value    Pr(&amp;gt;F)    
-exercises  90.422  1  34.169 7.797e-07 ***
-diet        1.064  1   0.402    0.5296    
-Residuals 105.854 40                      
+          Sum Sq Df F value    Pr(&amp;gt;F)    
+exercises 82.573  1 33.1852 1.026e-06 ***
+diet       0.543  1  0.2182    0.6429    
+Residuals 99.530 40                      
 ---
 Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This type of ANOVA is the default type in &lt;strong&gt;Python&lt;/strong&gt; (&lt;code&gt;statsmodels&lt;/code&gt; library), so if this is your software, well for you and less headaches!&lt;/p&gt;
@@ -193,11 +193,11 @@ car::Anova(mod3, type = &amp;quot;III&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 
 Response: t3
                 Sum Sq Df  F value    Pr(&amp;gt;F)    
-(Intercept)    1573.23  1 1442.983 &amp;lt; 2.2e-16 ***
-diet             41.45  1   38.016 3.048e-07 ***
-exercises       153.35  1  140.651 1.653e-14 ***
-diet:exercises   63.33  1   58.090 3.049e-09 ***
-Residuals        42.52 39                       
+(Intercept)    1245.85  1 1002.429 &amp;lt; 2.2e-16 ***
+diet             23.54  1   18.944 9.415e-05 ***
+exercises       131.26  1  105.611 1.175e-12 ***
+diet:exercises   51.06  1   41.083 1.399e-07 ***
+Residuals        48.47 39                       
 ---
 Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mod4 &amp;lt;- lm(t3 ~ exercises * diet, data = weightloss_unbal)
@@ -206,11 +206,11 @@ car::Anova(mod4, type = &amp;quot;III&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 
 Response: t3
                 Sum Sq Df  F value    Pr(&amp;gt;F)    
-(Intercept)    1573.23  1 1442.983 &amp;lt; 2.2e-16 ***
-exercises       153.35  1  140.651 1.653e-14 ***
-diet             41.45  1   38.016 3.048e-07 ***
-exercises:diet   63.33  1   58.090 3.049e-09 ***
-Residuals        42.52 39                       
+(Intercept)    1245.85  1 1002.429 &amp;lt; 2.2e-16 ***
+exercises       131.26  1  105.611 1.175e-12 ***
+diet             23.54  1   18.944 9.415e-05 ***
+exercises:diet   51.06  1   41.083 1.399e-07 ***
+Residuals        48.47 39                       
 ---
 Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This type of ANOVA is the default type in the &lt;strong&gt;SAS&lt;/strong&gt; and &lt;strong&gt;SPSS&lt;/strong&gt; software. Although I mostly use R, this should be the default ANOVA type in my opinion.&lt;/p&gt;
