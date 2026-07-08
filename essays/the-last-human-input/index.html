@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Essay — Pol Castellano</title>
+  <meta name="author" content="Pol Castellano Escuder">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Newsreader:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #faf9f7;
+      --text: #1a1a1a;
+      --muted: #6b6b6b;
+      --border: #e5e3df;
+    }
+
+    [data-theme="dark"] {
+      --bg: #111110;
+      --text: #e8e6e1;
+      --muted: #8a8a8a;
+      --border: #2a2928;
+    }
+
+    html {
+      font-size: 19px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: 'Newsreader', Georgia, serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    ::selection { background: rgba(0, 0, 0, 0.08); }
+    [data-theme="dark"] ::selection { background: rgba(255, 255, 255, 0.12); }
+
+    .header-bar {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 2rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .close-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 1.5rem;
+      line-height: 1;
+      transition: color 0.2s;
+    }
+
+    .close-link:hover { color: var(--text); }
+
+    .name {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .theme-toggle {
+      background: var(--muted);
+      border: none;
+      cursor: pointer;
+      width: 44px;
+      height: 24px;
+      border-radius: 12px;
+      position: relative;
+      transition: background 0.3s;
+      padding: 0;
+    }
+
+    .theme-toggle::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--bg);
+      transition: transform 0.3s;
+    }
+
+    [data-theme="dark"] .theme-toggle::after {
+      transform: translateX(20px);
+    }
+
+    .layout {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 2rem 2rem;
+      display: flex;
+      gap: 4rem;
+    }
+
+    .toc {
+      width: 220px;
+      flex-shrink: 0;
+      position: sticky;
+      top: 2rem;
+      align-self: flex-start;
+    }
+
+    .toc h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .toc ol {
+      list-style: none;
+      counter-reset: toc;
+    }
+
+    .toc li {
+      counter-increment: toc;
+      margin-bottom: 0.6rem;
+    }
+
+    .toc li::before {
+      content: counter(toc) ". ";
+      color: var(--muted);
+    }
+
+    .toc a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.88rem;
+      line-height: 1.4;
+      transition: color 0.2s;
+    }
+
+    .toc a:hover { color: var(--text); }
+
+    article {
+      flex: 1;
+      min-width: 0;
+    }
+
+    article h1 {
+      font-size: 2.8rem;
+      font-weight: 400;
+      line-height: 1.15;
+      margin-bottom: 0.6rem;
+    }
+
+    .subtitle {
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--text);
+      margin-bottom: 0.8rem;
+    }
+
+    .date {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+    }
+
+    article p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1.4rem;
+    }
+
+    article h2 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-top: 2.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    article em { font-style: italic; }
+
+    article a {
+      color: var(--text);
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem 2rem 2rem;
+    }
+
+    footer p {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.72rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: 800px) {
+      .layout { flex-direction: column; gap: 2rem; padding: 2rem 1.5rem; }
+      .toc { width: 100%; position: static; }
+      .header-bar { padding: 1.5rem 1.5rem 0; }
+      article h1 { font-size: 2rem; }
+      article p { font-size: 1rem; }
+      footer { padding: 1rem 1.5rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header-bar">
+    <a href="/" class="close-link">&times;</a>
+    <a href="/" class="name">Pol Castellano</a>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"></button>
+  </div>
+
+  <div class="layout">
+    <nav class="toc">
+      <h3>Contents</h3>
+      <ol id="toc-list"></ol>
+    </nav>
+    <article id="essay"></article>
+  </div>
+
+  <footer>
+    <p>&copy; Pol Castellano Escuder</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    }
+
+    (function() {
+      const saved = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+    })();
+
+    fetch('essay.md')
+      .then(r => r.text())
+      .then(md => {
+        // Parse front matter
+        let body = md;
+        let meta = {};
+        if (md.startsWith('---')) {
+          const end = md.indexOf('---', 3);
+          const front = md.slice(3, end);
+          body = md.slice(end + 3).trim();
+          front.split('\n').forEach(line => {
+            const i = line.indexOf(':');
+            if (i > -1) meta[line.slice(0, i).trim()] = line.slice(i + 1).trim();
+          });
+        }
+
+        // Render markdown
+        const html = marked.parse(body);
+
+        // Build article header + content
+        const article = document.getElementById('essay');
+        let header = '';
+        if (meta.title) {
+          header += '<h1>' + meta.title + '</h1>';
+          document.title = meta.title + ' — Pol Castellano';
+        }
+        if (meta.subtitle) header += '<p class="subtitle">' + meta.subtitle + '</p>';
+        if (meta.date) header += '<p class="date">' + meta.date + '</p>';
+        article.innerHTML = header + html;
+
+        // Build TOC from h2s
+        const headings = article.querySelectorAll('h2');
+        const tocList = document.getElementById('toc-list');
+        headings.forEach(h => {
+          const id = h.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+          h.id = id;
+          const li = document.createElement('li');
+          li.innerHTML = '<a href="#' + id + '">' + h.textContent + '</a>';
+          tocList.appendChild(li);
+        });
+      });
+  </script>
+</body>
+</html>
